@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Superline";
+  font-style: normal;
+  font-weight: normal;
+  font-variant-ligatures: none;
+  font-variant: normal;
+  src: local("Superline-Regular"), url("./Superline-Regular.ttf") format("truetype");
+}

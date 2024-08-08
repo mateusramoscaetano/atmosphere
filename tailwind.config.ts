@@ -13,6 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        "4xl": "2560px",
+        "3xl": "1920px",
+        "1650": "1650px",
+        "2sm": "480px",
+        "2.5sm": "587px",
+        "3sm": "390px",
+        "2lg": "940px",
+      },
+      fontFamily: {
+        superline: ["Superline", "sans-serif"],
+      },
     },
   },
   plugins: [],

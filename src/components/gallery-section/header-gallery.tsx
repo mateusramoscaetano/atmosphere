@@ -1,0 +1,17 @@
+interface IHeaderGalleryProps {}
+
+export function HeaderGallery({}: IHeaderGalleryProps) {
+  return (
+    <>
+      <div className="flex w-full bg-black lg:h-[169px] lg:px-[104px] xl:h-[212px] xl:px-[130px] 2xl:h-[254px] 2xl:px-[156px] 3xl:h-[318px] 3xl:px-[196px] 4xl:justify-center">
+        <div className="flex items-center font-superline text-[#FDD000] lg:text-[240px] xl:text-[300px] 2xl:text-[360px] 3xl:text-[450px]">
+          Galeria
+        </div>
+        <div className="flex items-end text-white lg:pb-[13px] lg:pl-[1.0625rem] lg:text-[12px] xl:pb-[16px] xl:pl-[21px] xl:text-[14px] 2xl:pb-[20px] 2xl:pl-[25px] 2xl:text-[16px] 3xl:pb-[25px] 3xl:pl-[32px] 3xl:text-[18px]">
+          Memórias incríveis já passaram por nossas lentes! <br /> O seu próximo
+          grande momento também já está para ser revelado!
+        </div>
+      </div>
+    </>
+  );
+}
