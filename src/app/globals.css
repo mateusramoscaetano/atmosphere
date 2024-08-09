@@ -25,6 +25,15 @@
     src: url(/src/fonts/Superline-Line.ttf) format('truetype');
   }
 }
+@layer neue {
+  @font-face {
+    font-family: 'Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/fonts/NeueMontreal-Regular.otf) format('opentype');
+  }
+}
 
 .embla__viewport {
   overflow: hidden;

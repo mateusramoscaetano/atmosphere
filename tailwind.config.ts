@@ -24,6 +24,7 @@ const config: Config = {
       },
       fontFamily: {
         superline: ["Superline", "sans-serif"],
+        neue: ["Neue", "sans-serif"],
       },
     },
   },

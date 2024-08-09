@@ -105,75 +105,149 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           className="lg:h-[126px] lg:w-[125px] xl:h-[157px] xl:w-[156px] 2xl:h-[189px] 2xl:w-[187px] 3xl:h-[236px] 3xl:w-[234px]"
         />
       </WithCursorFollow>
-      //ja feito
       <WithCursorFollow
         zIndex={2}
-        className="absolute right-[598px] top-[328px]"
+        className="absolute lg:right-[319px] lg:top-[175px] xl:right-[399px] xl:top-[219px] 2xl:right-[479px] 2xl:top-[263px] 3xl:right-[598px] 3xl:top-[328px]"
       >
-        <Image src="/T.png" width={249} height={318} alt="image3" />
+        <Image
+          src="/T.png"
+          width={249}
+          height={318}
+          alt="image3"
+          className="lg:h-[170px] lg:w-[133px] xl:h-[212px] xl:w-[166px] 2xl:h-[254px] 2xl:w-[199px] 3xl:h-[318px] 3xl:w-[249px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute left-[-140px] top-[-39px]"
+        className="absolute lg:left-[-74px] lg:top-[-21px] xl:left-[-92px] xl:top-[-26px] 2xl:left-[-110px] 2xl:top-[-32px] 3xl:left-[-140px] 3xl:top-[-39px]"
       >
-        <Image src="/T.png" width={249} height={318} alt="image3" />
-      </WithCursorFollow>
-      <WithCursorFollow zIndex={40} className="absolute right-[588px] top-0">
-        <Image src="/Agrande.png" width={275} height={304} alt="image1" />
+        <Image
+          src="/T.png"
+          width={249}
+          height={318}
+          alt="image3"
+          className="lg:h-[170px] lg:w-[133px] xl:h-[212px] xl:w-[166px] 2xl:h-[254px] 2xl:w-[199px] 3xl:h-[318px] 3xl:w-[249px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={40}
-        className="absolute right-[641px] top-[617px]"
+        className="absolute lg:right-[306px] lg:top-[0px] xl:right-[377px] xl:top-[0px] 2xl:right-[449px] 2xl:top-[0px] 3xl:right-[588px] 3xl:top-[0px]"
       >
-        <Image src="/W.png" width={274} height={274} alt="image1" />
+        <Image
+          src="/Agrande.png"
+          width={275}
+          height={304}
+          alt="image1"
+          className="lg:h-[162px] lg:w-[147px] xl:h-[202px] xl:w-[183px] 2xl:h-[243px] 2xl:w-[220px] 3xl:h-[304px] 3xl:w-[275px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={40}
-        className="absolute bottom-[-235px] right-[483px]"
+        className="absolute lg:right-[338px] lg:top-[325px] xl:right-[417px] xl:top-[401px] 2xl:right-[481px] 2xl:top-[473px] 3xl:right-[641px] 3xl:top-[617px]"
       >
-        <Image src="/Agrande.png" width={275} height={304} alt="image1" />
+        <Image
+          src="/W.png"
+          width={274}
+          height={274}
+          alt="image1"
+          className="lg:h-[146px] lg:w-[146px] xl:h-[183px] xl:w-[183px] 2xl:h-[220px] 2xl:w-[220px] 3xl:h-[274px] 3xl:w-[274px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={40}
-        className="absolute right-[279px] top-[61px]"
+        className="absolute lg:bottom-[-124px] lg:right-[254px] xl:bottom-[-155px] xl:right-[309px] 2xl:bottom-[-183px] 2xl:right-[362px] 3xl:bottom-[-235px] 3xl:right-[483px]"
       >
-        <Image src="/M.png" width={285} height={274} alt="image1" />
+        <Image
+          src="/Agrande.png"
+          width={275}
+          height={304}
+          alt="image1"
+          className="lg:h-[162px] lg:w-[147px] xl:h-[202px] xl:w-[183px] 2xl:h-[243px] 2xl:w-[220px] 3xl:h-[304px] 3xl:w-[275px]"
+        />
+      </WithCursorFollow>
+      <WithCursorFollow
+        zIndex={40}
+        className="absolute lg:right-[148px] lg:top-[33px] xl:right-[182px] xl:top-[41px] 2xl:right-[220px] 2xl:top-[52px] 3xl:right-[279px] 3xl:top-[61px]"
+      >
+        <Image
+          src="/M.png"
+          width={285}
+          height={274}
+          alt="image1"
+          className="lg:h-[147px] lg:w-[153px] xl:h-[183px] xl:w-[191px] 2xl:h-[220px] 2xl:w-[229px] 3xl:h-[274px] 3xl:w-[285px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute right-[21px] top-[-33px]"
+        className="absolute lg:right-[11px] lg:top-[-18px] xl:right-[14px] xl:top-[-23px] 2xl:right-[17px] 2xl:top-[-28px] 3xl:right-[21px] 3xl:top-[-33px]"
       >
-        <Image src="/O.png" width={264} height={260} alt="image3" />
+        <Image
+          src="/O.png"
+          width={264}
+          height={260}
+          alt="image3"
+          className="lg:h-[138px] lg:w-[140px] xl:h-[167px] xl:w-[170px] 2xl:h-[197px] 2xl:w-[200px] 3xl:h-[260px] 3xl:w-[264px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute bottom-[-139px] right-[-100px]"
+        className="absolute lg:bottom-[-74px] lg:right-[-53px] xl:bottom-[-93px] xl:right-[-66px] 2xl:bottom-[-110px] 2xl:right-[-78px] 3xl:bottom-[-139px] 3xl:right-[-100px]"
       >
-        <Image src="/O.png" width={264} height={260} alt="image3" />
+        <Image
+          src="/O.png"
+          width={264}
+          height={260}
+          alt="image3"
+          className="lg:h-[138px] lg:w-[140px] xl:h-[167px] xl:w-[170px] 2xl:h-[197px] 2xl:w-[200px] 3xl:h-[260px] 3xl:w-[264px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute bottom-[-111px] left-[362px]"
+        className="absolute lg:bottom-[-59px] lg:left-[193px] xl:bottom-[-74px] xl:left-[241px] 2xl:bottom-[-88px] 2xl:left-[288px] 3xl:bottom-[-111px] 3xl:left-[362px]"
       >
-        <Image src="/S.png" width={215} height={299} alt="image3" />
+        <Image
+          src="/S.png"
+          width={215}
+          height={299}
+          alt="image3"
+          className="lg:h-[159px] lg:w-[114px] xl:h-[193px] xl:w-[138px] 2xl:h-[226px] 2xl:w-[161px] 3xl:h-[299px] 3xl:w-[215px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute right-[175px] top-[281px]"
+        className="absolute lg:right-[93px] lg:top-[150px] xl:right-[116px] xl:top-[186px] 2xl:right-[140px] 2xl:top-[223px] 3xl:right-[175px] 3xl:top-[281px]"
       >
-        <Image src="/S.png" width={215} height={299} alt="image3" />
+        <Image
+          src="/S.png"
+          width={215}
+          height={299}
+          alt="image3"
+          className="lg:h-[159px] lg:w-[114px] xl:h-[193px] xl:w-[138px] 2xl:h-[226px] 2xl:w-[161px] 3xl:h-[299px] 3xl:w-[215px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute bottom-[-123px] left-[606px]"
+        className="absolute lg:bottom-[-65px] lg:left-[323px] xl:bottom-[-83px] xl:left-[402px] 2xl:bottom-[-99px] 2xl:left-[484px] 3xl:bottom-[-123px] 3xl:left-[606px]"
       >
-        <Image src="/R.png" width={219} height={210} alt="image3" />
+        <Image
+          src="/R.png"
+          width={219}
+          height={210}
+          alt="image3"
+          className="lg:h-[111px] lg:w-[116px] xl:h-[134px] xl:w-[141px] 2xl:h-[161px] 2xl:w-[170px] 3xl:h-[210px] 3xl:w-[219px]"
+        />
       </WithCursorFollow>
       <WithCursorFollow
         zIndex={2}
-        className="absolute bottom-[278px] right-[-97px]"
+        className="absolute lg:bottom-[148px] lg:right-[-52px] xl:bottom-[188px] xl:right-[-65px] 2xl:bottom-[226px] 2xl:right-[-79px] 3xl:bottom-[278px] 3xl:right-[-97px]"
       >
-        <Image src="/R.png" width={219} height={210} alt="image3" />
+        <Image
+          src="/R.png"
+          width={219}
+          height={210}
+          alt="image3"
+          className="lg:h-[111px] lg:w-[116px] xl:h-[134px] xl:w-[141px] 2xl:h-[161px] 2xl:w-[170px] 3xl:h-[210px] 3xl:w-[219px]"
+        />
       </WithCursorFollow>
       <AstronautAnimate />
     </div>

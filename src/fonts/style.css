@@ -6,3 +6,11 @@
   font-variant: normal;
   src: local("Superline-Regular"), url("./Superline-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-variant-ligatures: none;
+  font-variant: normal;
+  src: local("NeueMontreal-Regular"), url("./NeueMontreal-Regular.otf") format("opentype");
+}
