@@ -123,7 +123,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
             whileHover={{ scale: 1.5 }}
             transition={{ duration: 0.5 }}
             onClick={scrollNext}
-            className="embla__next fixed bottom-[200px] right-[25px] text-black"
+            className="embla__next absolute bottom-[200px] right-[25px] text-black"
           >
             <motion.img src="/right-icon.png" width={60} height={96} />
           </motion.button>

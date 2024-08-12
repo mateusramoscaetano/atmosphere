@@ -6,7 +6,7 @@ import { DefaultField } from "../form-field/default-field";
 import { ContactCard } from "../cards/contact-card";
 import formatPhone from "@/utils/formatPhone";
 
-interface ContactSchema {
+export interface ContactSchema {
   name: string;
   email: string;
   phone: string;

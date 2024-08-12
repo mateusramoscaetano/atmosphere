@@ -18,7 +18,7 @@ interface IDefaultFieldProps<T extends FieldValues> {
   className: string;
   type?: string;
   isError: boolean;
-  size: "large" | "slim";
+  size: "large" | "slim" | "mobile";
 }
 
 export function DefaultField<T extends FieldValues>({
@@ -50,6 +50,7 @@ export function DefaultField<T extends FieldValues>({
                     "flex h-[209px] lg:h-[112px] xl:h-[142px] 2xl:h-[168px] 3xl:h-[209px]":
                       size === "large",
                     "h-[53px]": size === "slim",
+                    "mb-[26px] h-[53px] w-[365px]": size === "mobile",
                   },
                 )}
                 icon={false}

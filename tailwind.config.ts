@@ -27,6 +27,10 @@ const config: Config = {
         superline: ["Superline", "sans-serif"],
         neue: ["Neue", "sans-serif"],
       },
+      scale: {
+        "400": "4",
+        "200": "2",
+      },
     },
   },
   plugins: [],
