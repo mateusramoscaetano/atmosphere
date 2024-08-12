@@ -1,17 +1,19 @@
 import { ButtonHTMLAttributes, forwardRef } from "react";
 import { motion } from "framer-motion";
+import cn from "@/utils/cn";
 
 interface IButtonBanner1Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
+  className?: string;
 }
 
-export function ButtonBanner1({ label }: IButtonBanner1Props) {
+export function ButtonBanner1({ label, className }: IButtonBanner1Props) {
   return (
     <motion.button
-      className=" bg-[#0F4AE4] text-white
-  w-[209px] h-[60px] px-2
-
-  "
+      className={cn(
+        "h-[60px] w-[209px] bg-[#0F4AE4] px-2 text-white",
+        className,
+      )}
       whileHover={{
         scaleX: 1.2,
         scaleY: 1.2,

@@ -4,8 +4,11 @@
   font-weight: normal;
   font-variant-ligatures: none;
   font-variant: normal;
+  font-feature-settings: "liga" 0;
   src: local("Superline-Regular"), url("./Superline-Regular.ttf") format("truetype");
+  font-feature-settings: "ss01" 0, "ss02" 0;
 }
+
 @font-face {
   font-family: "Neue";
   font-style: normal;
