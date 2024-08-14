@@ -1,3 +1,5 @@
+"use client";
+import { ButtonBanner1 } from "@/components/buttons/button-banner-1";
 import Image from "next/image";
 
 interface IOurBrandsMobileProps {}
@@ -14,14 +16,14 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
         </div>
         <div className="flex flex-col items-center gap-[70px]">
           <Image
-            src="/logo_formo.png"
+            src="/logo_formo.svg"
             width={170}
             height={86}
             alt="logo"
             className=""
           />
           <Image
-            src="/logo_yz.png"
+            src="/logo-yz.svg"
             width={115}
             height={86}
             alt="logo"
@@ -29,19 +31,27 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
           />
 
           <Image
-            src="/logo_revelo.png"
+            src="/revelo.svg"
             width={227}
             height={75}
             alt="logo"
             className=""
           />
           <Image
-            src="/logo_bartenders.png"
-            width={223.56}
-            height={61.47}
+            src="/loft.svg"
+            width={122.22}
+            height={68.67}
             alt="logo"
             className=""
           />
+          <Image
+            src="/tag.svg"
+            width={137}
+            height={62}
+            alt="logo"
+            className=""
+          />
+          <ButtonBanner1 label="Saiba Mais" />
         </div>
       </div>
     </>

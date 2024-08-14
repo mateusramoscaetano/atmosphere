@@ -32,7 +32,7 @@ export function MobileHeader({}: IMobileHeaderProps) {
         )}
       >
         <Image
-          src="/logo-mobile.png"
+          src="/logo-mobile.svg"
           width={36}
           height={39}
           alt="logo-mobile"
@@ -70,9 +70,9 @@ export function MobileHeader({}: IMobileHeaderProps) {
 
         <div className="flex w-full items-end justify-center 3sm:gap-[30px]">
           <Image src="/insta.svg" width={25} height={25} alt="logo-insta" />
-          <Image src="/youtube.png" width={27} height={20} alt="logo-insta" />
-          <Image src="/linkedin.png" width={29} height={30} alt="logo-insta" />
-          <Image src="/mail-2.png" width={30} height={21} alt="logo-insta" />
+          <Image src="/youtube.svg" width={27} height={20} alt="logo-insta" />
+          <Image src="/linkedin.svg" width={29} height={30} alt="logo-insta" />
+          <Image src="/mail5.svg" width={30} height={21} alt="logo-insta" />
         </div>
       </motion.div>
     </>

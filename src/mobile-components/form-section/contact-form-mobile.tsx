@@ -105,7 +105,7 @@ export function ContactFormMobile({}: IContactFormMobileProps) {
         <div className="flex items-center justify-center gap-5">
           <a href="https://wa.me/+5541984486841">
             <ContactCardMobile
-              src="/whats.png"
+              src="/whats.svg"
               width={18}
               height={18}
               text="41 9 8448-6841"
@@ -114,7 +114,7 @@ export function ContactFormMobile({}: IContactFormMobileProps) {
           </a>
           <a href="mailto:contato@grupoatmosfera.com.br">
             <ContactCardMobile
-              src="/mail.png"
+              src="/mail9.svg"
               width={19}
               height={14}
               text="contato@grupoatmosfera.com.br"
