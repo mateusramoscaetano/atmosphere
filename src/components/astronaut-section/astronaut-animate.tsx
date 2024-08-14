@@ -67,9 +67,9 @@ export function AstronautAnimate({}: IAstronautAnimateProps) {
         style={{
           x: springX,
           y: springY,
-          zIndex: 50,
+          zIndex: 100,
         }}
-        className="flex w-full items-center justify-center"
+        className="absolute flex w-full items-center justify-center"
       >
         <Image
           src="/astro.png"

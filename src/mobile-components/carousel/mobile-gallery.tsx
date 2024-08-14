@@ -34,7 +34,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
     useDotButton(emblaApi);
   return (
     <>
-      <div className="embla min-h-full w-full">
+      <div id="home-mobile" className="embla min-h-full w-full">
         <div
           className="embla__viewport flex w-full flex-col items-center justify-center"
           ref={emblaRef}

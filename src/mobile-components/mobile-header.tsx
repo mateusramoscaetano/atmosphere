@@ -58,12 +58,14 @@ export function MobileHeader({}: IMobileHeaderProps) {
         className="fixed left-0 top-0 z-40 mt-[60px] flex h-full w-full flex-col items-center justify-center bg-black"
       >
         <ul className="mb-[84px] space-y-[75px] text-center text-[18px] text-white">
-          <li>Início</li>
-          <li>Sobre Nós</li>
-          <li>Marcas</li>
-          <li>Blog</li>
-          <li>Galeria</li>
-          <li>Contato</li>
+          <li onClick={() => selectSection("home-mobile", 0)}>Início</li>
+          <li onClick={() => selectSection("", 0)}>Sobre Nós</li>
+          <li onClick={() => selectSection("our-brands-mobile", 100)}>
+            Marcas
+          </li>
+          <li onClick={() => selectSection("how-to-mobile", 100)}>Blog</li>
+          <li onClick={() => selectSection("gallery-mobile", 200)}>Galeria</li>
+          <li onClick={() => selectSection("contact-mobile", 100)}>Contato</li>
         </ul>
 
         <div className="flex w-full items-end justify-center 3sm:gap-[30px]">

@@ -7,7 +7,10 @@ interface IHowToMadeMobileProps {}
 export function HowToMadeMobile({}: IHowToMadeMobileProps) {
   return (
     <>
-      <div className="flex min-h-full w-full flex-col items-center bg-white px-[44px] py-16">
+      <div
+        id="how-to-mobile"
+        className="flex min-h-full w-full flex-col items-center bg-white px-[44px] py-16"
+      >
         <div className="font-superline text-[35px] leading-[40px]">
           TODA A SUA JORNADA UNIVERSITÁRIA ESTÁ COBERTA <br /> PELA NOSSA
           ATMOSFERA DE INFORMAÇÕES

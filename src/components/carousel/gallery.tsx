@@ -35,7 +35,7 @@ export function Gallery({}: ICarouselProps) {
   }, [emblaApi]);
 
   return (
-    <div className="embla min-h-full w-full">
+    <div className="embla min-h-full w-full" id="#home">
       <div
         className="embla__viewport flex w-full flex-col items-center justify-center"
         ref={emblaRef}

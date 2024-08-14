@@ -5,7 +5,10 @@ interface IOurBrandsProps {}
 export function OurBrands({}: IOurBrandsProps) {
   return (
     <>
-      <div className="relative flex w-full flex-col items-center bg-black lg:h-[201px] xl:h-[251px] 2xl:h-[301px] 1650:h-[323px] 3xl:h-[377px]">
+      <div
+        id="second"
+        className="relative flex w-full flex-col items-center bg-black lg:h-[201px] xl:h-[251px] 2xl:h-[301px] 1650:h-[323px] 3xl:h-[377px]"
+      >
         <div className="mb-[3px] flex w-[148px] items-center justify-center border-b-[3px] border-[#F35937] font-superline text-white lg:mt-[39px] lg:text-[24px] xl:mt-[49px] xl:text-[30px] 2xl:mt-[59.2] 2xl:text-[36px] 1650:mt-[63.5] 1650:text-[38px] 3xl:mt-[74px] 3xl:text-[45px]">
           Nossas Marcas
         </div>

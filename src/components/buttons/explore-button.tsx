@@ -10,7 +10,7 @@ export function ExploreButton({}: IExploreButtonProps) {
     <>
       <div
         className={cn(
-          "flex items-center font-bold text-base text-[#FDD000] gap-2 lg:mt-[0px] 3xl:mt-[24px] h-[17px]"
+          "flex h-[17px] cursor-pointer items-center gap-2 text-base font-bold text-[#FDD000] lg:mt-[0px] 3xl:mt-[24px]",
         )}
       >
         <Image src="/Vector.png" width={9} height={9} alt="vector" />

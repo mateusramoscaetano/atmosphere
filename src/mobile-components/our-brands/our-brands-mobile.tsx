@@ -5,7 +5,10 @@ interface IOurBrandsMobileProps {}
 export function OurBrandsMobile({}: IOurBrandsMobileProps) {
   return (
     <>
-      <div className="relative mb-[20%] mt-[9%] flex min-h-full w-full flex-col items-center bg-black">
+      <div
+        id="our-brands-mobile"
+        className="relative mb-[20%] mt-[9%] flex min-h-full w-full flex-col items-center bg-black"
+      >
         <div className="mb-[70px] flex w-[156px] items-center justify-center border-b-[3px] border-[#F35937] font-superline text-[45px] text-white">
           Nossas Marcas
         </div>

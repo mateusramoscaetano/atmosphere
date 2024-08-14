@@ -3,7 +3,10 @@ interface IHeaderGalleryProps {}
 export function HeaderGallery({}: IHeaderGalleryProps) {
   return (
     <>
-      <div className="flex w-full bg-black lg:h-[169px] lg:px-[104px] xl:h-[212px] xl:px-[130px] 2xl:h-[254px] 2xl:px-[156px] 3xl:h-[318px] 3xl:px-[196px] 4xl:justify-center">
+      <div
+        id="gallery"
+        className="flex w-full bg-black lg:h-[169px] lg:px-[104px] xl:h-[212px] xl:px-[130px] 2xl:h-[254px] 2xl:px-[156px] 3xl:h-[318px] 3xl:px-[196px] 4xl:justify-center"
+      >
         <div className="flex items-center font-superline text-[#FDD000] lg:text-[240px] xl:text-[300px] 2xl:text-[360px] 3xl:text-[450px]">
           Galeria
         </div>

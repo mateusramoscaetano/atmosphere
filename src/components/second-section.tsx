@@ -4,15 +4,8 @@ import { ImageOverlay } from "./filters/image-overlay";
 
 export function SecondSection() {
   return (
-    <div
-      className="relative w-full overflow-hidden
-        3xl:h-[446px]
-        1650:h-[383px]
-        2xl:h-[356px]
-        xl:h-[297px]
-        lg:h-[237px]"
-    >
-      <div className="w-full min-h-full flex relative z-10">
+    <div className="relative w-full overflow-hidden lg:h-[237px] xl:h-[297px] 2xl:h-[356px] 1650:h-[383px] 3xl:h-[446px]">
+      <div className="relative z-10 flex min-h-full w-full">
         <ImageOverlay
           imageUrl="/feia1.png"
           text={
@@ -39,15 +32,7 @@ export function SecondSection() {
           width={640}
           height={446}
           alt="tags"
-          className="absolute right-0 
-          w-1/3
-          lg:h-[237px]
-          xl:h-[297px] 
-          2xl:h-[356px] 
-          1650:h-[383px] 
-          3xl:h-[446px]
-          
-          object-cover origin-bottom-right"
+          className="absolute right-0 w-1/3 origin-bottom-right object-cover lg:h-[237px] xl:h-[297px] 2xl:h-[356px] 1650:h-[383px] 3xl:h-[446px]"
           whileHover={{
             left: 0,
             width: "100%",
