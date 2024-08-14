@@ -28,16 +28,15 @@ export function SecondSection() {
         />
 
         <motion.img
-          src="/tags2.png"
+          src="/tags4.png"
           width={640}
           height={446}
           alt="tags"
-          className="absolute right-0 w-1/3 origin-bottom-right object-cover lg:h-[237px] xl:h-[297px] 2xl:h-[356px] 1650:h-[383px] 3xl:h-[446px]"
+          className="absolute right-0 w-1/3 origin-right object-cover lg:h-[237px] xl:h-[297px] 2xl:h-[356px] 1650:h-[383px] 3xl:h-[446px]"
           whileHover={{
             left: 0,
             width: "100%",
-            scale: 1.6,
-            translateX: "25%",
+            scale: 1.3,
           }}
           transition={{ duration: 0.4, ease: easeInOut }}
         />

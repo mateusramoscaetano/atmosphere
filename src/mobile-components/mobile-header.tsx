@@ -55,9 +55,9 @@ export function MobileHeader({}: IMobileHeaderProps) {
           duration: 0.5,
           ease: "easeInOut",
         }}
-        className="fixed left-0 top-0 z-40 mt-[60px] flex h-full w-full flex-col items-center justify-center bg-black"
+        className="fixed left-0 top-0 z-40 mt-[40px] flex h-full w-full flex-col items-center justify-center bg-black"
       >
-        <ul className="mb-[84px] space-y-[75px] text-center text-[18px] text-white">
+        <ul className="mb-[84px] space-y-[60px] text-center text-[18px] text-white">
           <li onClick={() => selectSection("home-mobile", 0)}>Início</li>
           <li onClick={() => selectSection("", 0)}>Sobre Nós</li>
           <li onClick={() => selectSection("our-brands-mobile", 100)}>
@@ -69,7 +69,7 @@ export function MobileHeader({}: IMobileHeaderProps) {
         </ul>
 
         <div className="flex w-full items-end justify-center 3sm:gap-[30px]">
-          <Image src="/insta.png" width={25} height={25} alt="logo-insta" />
+          <Image src="/insta.svg" width={25} height={25} alt="logo-insta" />
           <Image src="/youtube.png" width={27} height={20} alt="logo-insta" />
           <Image src="/linkedin.png" width={29} height={30} alt="logo-insta" />
           <Image src="/mail-2.png" width={30} height={21} alt="logo-insta" />
