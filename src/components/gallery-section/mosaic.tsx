@@ -48,7 +48,7 @@ export function Mosaic() {
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className="relative h-full w-full"
+          className="relative h-full w-full overflow-hidden"
         >
           <motion.img
             src="/mosaic-1.png"
@@ -67,7 +67,7 @@ export function Mosaic() {
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className="relative h-full w-full"
+          className="relative h-full w-full overflow-hidden"
         >
           <motion.img
             src="/mosaic-2.png"
@@ -86,7 +86,7 @@ export function Mosaic() {
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className="relative h-full w-full"
+          className="relative h-full w-full overflow-hidden"
         >
           <motion.img
             src="/mosaic-3.png"
@@ -105,7 +105,7 @@ export function Mosaic() {
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className="relative h-full w-full"
+          className="relative h-full w-full overflow-hidden"
         >
           <motion.img
             src="/mosaic-4.png"
@@ -124,7 +124,7 @@ export function Mosaic() {
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className="relative h-full w-full"
+          className="relative h-full w-full overflow-hidden"
         >
           <motion.img
             src="/mosaic-5.png"
@@ -143,7 +143,7 @@ export function Mosaic() {
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className="relative h-full w-full"
+          className="relative h-full w-full overflow-hidden"
         >
           <motion.img
             src="/mosaic-6.png"

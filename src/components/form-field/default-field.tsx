@@ -52,6 +52,7 @@ export function DefaultField<T extends FieldValues>({
                     "h-[53px]": size === "slim",
                     "mb-[26px] h-[53px] w-[365px]": size === "mobile",
                   },
+                  className,
                 )}
                 icon={false}
                 onInput={onInput}

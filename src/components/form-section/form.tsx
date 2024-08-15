@@ -5,6 +5,8 @@ import { Form } from "../form-field/form";
 import { DefaultField } from "../form-field/default-field";
 import { ContactCard } from "../cards/contact-card";
 import formatPhone from "@/utils/formatPhone";
+import cn from "@/utils/cn";
+import { motion } from "framer-motion";
 
 export interface ContactSchema {
   name: string;
@@ -51,7 +53,7 @@ export function ContactForm({}: IFormProps) {
   }
 
   return (
-    <div className="absolute text-white lg:left-[106px] lg:top-[61px] lg:h-[309px] lg:w-[460px] xl:left-[135px] xl:top-[77px] xl:h-[393px] xl:w-[580px] 2xl:left-[160px] 2xl:top-[95px] 2xl:h-[466px] 2xl:w-[717px] 3xl:left-[200px] 3xl:top-[114px] 3xl:h-[582px] 3xl:w-[860px]">
+    <div className="absolute min-h-full text-white lg:left-[106px] lg:top-[16px] lg:w-[460px] xl:left-[135px] xl:top-[77px] xl:w-[580px] 2xl:left-[160px] 2xl:top-[95px] 2xl:w-[717px] 3xl:left-[200px] 3xl:top-[114px] 3xl:w-[860px]">
       <div className="font-superline lg:mb-3 lg:h-[45px] lg:text-[43px] xl:mb-3 xl:h-[56px] xl:text-[53px] 2xl:mb-4 2xl:h-[68px] 2xl:text-[63px] 3xl:mb-5 3xl:h-[85px] 3xl:text-[80px]">
         Fale Com a Gente
       </div>
@@ -59,7 +61,7 @@ export function ContactForm({}: IFormProps) {
         Prencha o formulário abaixo ou entre em contato via WhatsApp
       </div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="p">
           <DefaultField
             placeholder="Nome"
             label="Nome"
@@ -97,12 +99,20 @@ export function ContactForm({}: IFormProps) {
             isError={!!form.formState.errors.message}
             size="large"
           />
-          <button
-            type="submit"
-            className="hidden bg-blue-500 px-4 py-2 text-white"
-          >
-            Enviar
-          </button>
+          <div className="flex items-center justify-end">
+            <motion.button
+              className={cn(
+                "right-0 h-[40px] w-[120px] bg-[#0F4AE4] px-2 text-white",
+              )}
+              whileHover={{
+                scale: 1.2,
+              }}
+              transition={{ duration: 0.3 }}
+              type="submit"
+            >
+              Enviar
+            </motion.button>
+          </div>
         </form>
       </Form>
 
@@ -113,7 +123,7 @@ export function ContactForm({}: IFormProps) {
             width={43}
             height={42}
             text="41 9 8448-6841"
-            className="lg:w-[22px] xl:w-[28px] 2xl:w-[34px] 3xl:w-[43px]"
+            className="absolute lg:w-[22px] xl:w-[28px] 2xl:w-[34px] 3xl:w-[43px]"
           />
         </a>
         <a href="mailto:contato@grupoatmosfera.com.br">

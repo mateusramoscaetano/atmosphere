@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { DotButton, useDotButton } from "@/utils/use-dot-button";
 import { MobileTextBox1 } from "../text-boxes/mobile-textbox-1";
+import { MobileTextBox2 } from "../text-boxes/mobile-text-box-2";
 
 interface IMobileGalleryProps {}
 
@@ -74,40 +75,38 @@ export function MobileGallery({}: IMobileGalleryProps) {
               {inView === 0 && <MobileTextBox1 />}
             </div>
 
-            <div className="embla__slide flex items-center justify-center">
-              <div className="embla_slide relative w-full bg-black lg:h-[486px] xl:h-[608px] 2xl:h-[730px] 1650:h-[784px] 3xl:h-[913px]">
+            <div className="embla__slide flex items-center justify-center overflow-hidden">
+              <div className="embla_slide relative flex h-full w-full justify-center bg-black">
                 <Image
-                  src="/cola1.png"
-                  width={1193}
-                  height={1011}
+                  src="/colacao.png"
+                  width={435}
+                  height={852}
                   alt="formando-2"
+                  className="absolute z-30 scale-75 3sm:bottom-[-80px] 3sm:right-[-100px] 2sm:right-[-50px] sm:right-0 md:right-[100px]"
                 />
                 <Image
                   src="/Asteroid1.png"
                   width={283}
                   height={273}
                   alt="asteroid1"
+                  className="absolute right-[-35px] top-[50px] z-20 scale-75"
                 />
                 <Image
                   src="/Asteroid2.png"
                   width={265}
                   height={255}
                   alt="asteroid1"
+                  className="absolute bottom-[-86px] left-[-80px] z-40 rotate-[97deg]"
                 />
                 <Image
                   src="/arc.png"
                   width={265}
                   height={255}
                   alt="asteroid1"
+                  className="absolute top-[-25px] z-10 rotate-180 scale-75"
                 />
-                <Image
-                  src="/ASTRO2.png"
-                  width={265}
-                  height={255}
-                  alt="asteroid1"
-                />
+                {inView === 1 && <MobileTextBox2 />}
               </div>
-              {inView === 1 && <></>}
             </div>
           </div>
 

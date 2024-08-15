@@ -60,10 +60,7 @@ export function OurBrands({}: IOurBrandsProps) {
               "bg-[#0F4AE4] px-2 text-white lg:mt-[33px] lg:h-[32px] lg:w-[112px] xl:mt-[42px] xl:h-[40px] xl:w-[141px] 2xl:mt-[50px] 2xl:h-[48px] 2xl:w-[174px] 3xl:mt-[63px] 3xl:h-[60px] 3xl:w-[209px]",
             )}
             whileHover={{
-              scaleX: 1.2,
-              scaleY: 1.2,
-              originX: 0,
-              originY: 0,
+              scale: 1.2,
             }}
             transition={{ duration: 0.3 }}
           >

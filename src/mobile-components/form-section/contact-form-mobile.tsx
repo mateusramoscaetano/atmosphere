@@ -7,6 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { ContactCardMobile } from "../cards/contact-card-mobile";
+import cn from "@/utils/cn";
+import { motion } from "framer-motion";
 
 interface IContactFormMobileProps {}
 
@@ -89,16 +91,22 @@ export function ContactFormMobile({}: IContactFormMobileProps) {
               label="Mensagem"
               name="message"
               form={form}
-              className="mb-[53px]"
+              className="mb-[15px]"
               isError={!!form.formState.errors.message}
               size="large"
             />
-            <button
+            <motion.button
+              className={cn(
+                "mb-10 h-[40px] w-[120px] bg-[#0F4AE4] px-2 text-white",
+              )}
+              whileHover={{
+                scale: 1.2,
+              }}
+              transition={{ duration: 0.3 }}
               type="submit"
-              className="hidden bg-blue-500 px-4 py-2 text-white"
             >
               Enviar
-            </button>
+            </motion.button>
           </form>
         </Form>
 

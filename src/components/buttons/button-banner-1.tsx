@@ -15,10 +15,7 @@ export function ButtonBanner1({ label, className }: IButtonBanner1Props) {
         className,
       )}
       whileHover={{
-        scaleX: 1.2,
-        scaleY: 1.2,
-        originX: 0,
-        originY: 0,
+        scale: 1.2,
       }}
       transition={{ duration: 0.3 }}
     >

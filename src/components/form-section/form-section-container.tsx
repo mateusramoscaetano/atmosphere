@@ -13,13 +13,13 @@ export function FormSectionContainer({}: IFormSectionContainerProps) {
         <div className="h-[43px] w-full bg-[#0F4AE4]"></div>
         <div className="h-[43px] w-full bg-[#FDD000]"></div>
 
-        <div className="relative flex w-full items-center lg:h-[516px] xl:h-[646px] 2xl:h-[775px] 3xl:h-[969px] 4xl:h-[1222px]">
+        <div className="relative flex min-h-full w-full items-start">
           <Image
             src="/bg-form.png"
             width={1920}
-            height={969}
+            height={1080}
             alt="sky"
-            className="bg-repeat object-cover 4xl:w-[2560px]"
+            className="object-cover"
           />
           <Image
             src="/sat3.png"
