@@ -42,7 +42,7 @@ const filterMotion = {
 
 export function Mosaic() {
   return (
-    <div className="grid grid-cols-4 grid-rows-3 overflow-hidden">
+    <div className="grid h-full w-full grid-cols-4 grid-rows-3">
       <div className="relative col-span-2 row-span-2">
         <motion.div
           initial="rest"
@@ -53,9 +53,7 @@ export function Mosaic() {
           <motion.img
             src="/mosaic-1.png"
             alt="Image 1"
-            width={960}
-            height={960}
-            className="object-cover xl:h-[640px] xl:w-[640px] 3xl:h-[960px] 3xl:w-[960px]"
+            className="h-full w-full object-cover"
             variants={imageMotion}
           />
           <motion.div
@@ -64,7 +62,7 @@ export function Mosaic() {
           />
         </motion.div>
       </div>
-      <div className="relative col-start-1 row-start-3 overflow-hidden">
+      <div className="relative col-start-1 row-start-3">
         <motion.div
           initial="rest"
           whileHover="hover"
@@ -74,9 +72,7 @@ export function Mosaic() {
           <motion.img
             src="/mosaic-2.png"
             alt="Image 2"
-            width={491}
-            height={491}
-            className="object-cover xl:h-[320.66px] xl:w-[320.66px] 3xl:h-[481px] 3xl:w-[481px]"
+            className="h-full w-full object-cover"
             variants={imageMotion}
           />
           <motion.div
@@ -85,7 +81,7 @@ export function Mosaic() {
           />
         </motion.div>
       </div>
-      <div className="relative col-start-2 row-start-3 overflow-hidden">
+      <div className="relative col-start-2 row-start-3">
         <motion.div
           initial="rest"
           whileHover="hover"
@@ -95,9 +91,7 @@ export function Mosaic() {
           <motion.img
             src="/mosaic-3.png"
             alt="Image 3"
-            width={491}
-            height={491}
-            className="object-cover xl:h-[320.66px] xl:w-[320.66px] 3xl:h-[481px] 3xl:w-[481px]"
+            className="h-full w-full object-cover"
             variants={imageMotion}
           />
           <motion.div
@@ -106,7 +100,7 @@ export function Mosaic() {
           />
         </motion.div>
       </div>
-      <div className="relative col-start-3 row-start-1 overflow-hidden">
+      <div className="relative col-start-3 row-start-1">
         <motion.div
           initial="rest"
           whileHover="hover"
@@ -116,9 +110,7 @@ export function Mosaic() {
           <motion.img
             src="/mosaic-4.png"
             alt="Image 4"
-            width={491}
-            height={491}
-            className="object-cover xl:h-[320.66px] xl:w-[320.66px] 3xl:h-[481px] 3xl:w-[481px]"
+            className="h-full w-full object-cover"
             variants={imageMotion}
           />
           <motion.div
@@ -127,7 +119,7 @@ export function Mosaic() {
           />
         </motion.div>
       </div>
-      <div className="relative col-start-4 row-start-1 overflow-hidden">
+      <div className="relative col-start-4 row-start-1">
         <motion.div
           initial="rest"
           whileHover="hover"
@@ -137,9 +129,7 @@ export function Mosaic() {
           <motion.img
             src="/mosaic-5.png"
             alt="Image 5"
-            width={491}
-            height={491}
-            className="object-cover xl:h-[320.66px] xl:w-[320.66px] 3xl:h-[481px] 3xl:w-[481px]"
+            className="h-full w-full object-cover"
             variants={imageMotion}
           />
           <motion.div
@@ -148,7 +138,7 @@ export function Mosaic() {
           />
         </motion.div>
       </div>
-      <div className="relative col-span-2 col-start-3 row-span-2 row-start-2 overflow-hidden">
+      <div className="relative col-span-2 col-start-3 row-span-2 row-start-2">
         <motion.div
           initial="rest"
           whileHover="hover"
@@ -158,9 +148,7 @@ export function Mosaic() {
           <motion.img
             src="/mosaic-6.png"
             alt="Image 6"
-            width={960}
-            height={960}
-            className="object-cover xl:h-[640px] xl:w-[640px] 3xl:h-[960px] 3xl:w-[960px]"
+            className="h-full w-full object-cover"
             variants={imageMotion}
           />
           <motion.div

@@ -13,7 +13,7 @@ export function OurBrands({}: IOurBrandsProps) {
         id="second"
         className="relative flex h-[458px] w-full flex-col items-center justify-center bg-black"
       >
-        <div className="mb-[3px] flex w-[148px] items-center justify-center border-b-[3px] border-[#F35937] font-superline text-white lg:mt-[29px] lg:text-[24px] xl:mt-[36px] xl:text-[30px] 2xl:mt-[45px] 2xl:text-[36px] 1650:mt-[63.5] 1650:text-[38px] 3xl:mt-[54px] 3xl:text-[45px]">
+        <div className="mb-[3px] flex w-[148px] items-center justify-center border-b-[3px] border-[#F35937] font-superline text-white lg:text-[24px] xl:text-[30px] 2xl:text-[36px] 1650:text-[38px] 3xl:text-[45px]">
           Nossas Marcas
         </div>
         <div className="flex items-center justify-center gap-[53px] lg:mt-[24px] xl:mt-[30px] 2xl:mt-[36px] 3xl:mt-[46px]">
