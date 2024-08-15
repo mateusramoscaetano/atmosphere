@@ -58,7 +58,7 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
               className="lg:h-[139px] lg:w-[141px] xl:h-[173px] xl:w-[176px] 2xl:h-[208px] 2xl:w-[211px] 3xl:h-[260px] 3xl:w-[264px]"
             />
           </WithCursorFollow>
-          //jafeito
+
           <WithCursorFollow
             zIndex={2}
             className="absolute lg:left-[158px] lg:top-[-48px] xl:left-[197px] xl:top-[-60px] 2xl:left-[237px] 2xl:top-[-72px] 3xl:left-[296px] 3xl:top-[-90px]"
@@ -73,7 +73,7 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[303px] lg:top-[12px] xl:left-[382px] xl:top-[15px] 2xl:left-[484px] 2xl:top-[18px] 3xl:left-[569px] 3xl:top-[23px]"
+            className="absolute lg:left-[303px] lg:top-[10px] xl:left-[379px] xl:top-[13px] 2xl:left-[455px] 2xl:top-[16px] 3xl:left-[569px] 3xl:top-[20px]"
           >
             <Image
               src="/R.png"
@@ -133,19 +133,19 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={40}
-            className="absolute lg:right-[306px] lg:top-[0px] xl:right-[377px] xl:top-[0px] 2xl:right-[449px] 2xl:top-[0px] 3xl:right-[588px] 3xl:top-[0px]"
+            className="absolute lg:right-[313px] lg:top-[0px] xl:right-[392px] xl:top-[0px] 2xl:right-[470px] 2xl:top-[0px] 3xl:right-[588px] 3xl:top-[0px]"
           >
             <Image
               src="/Agrande.png"
               width={275}
               height={304}
               alt="image1"
-              className="lg:h-[162px] lg:w-[147px] xl:h-[202px] xl:w-[183px] 2xl:h-[243px] 2xl:w-[220px] 3xl:h-[304px] 3xl:w-[275px]"
+              className="lg:h-[162px] lg:w-[146px] xl:h-[202px] xl:w-[183px] 2xl:h-[243px] 2xl:w-[220px] 3xl:h-[304px] 3xl:w-[275px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={40}
-            className="absolute lg:right-[338px] lg:top-[325px] xl:right-[417px] xl:top-[401px] 2xl:right-[481px] 2xl:top-[473px] 3xl:right-[641px] 3xl:top-[617px]"
+            className="absolute lg:right-[341px] lg:top-[329px] xl:right-[427px] xl:top-[411px] 2xl:right-[512px] 2xl:top-[493px] 3xl:right-[641px] 3xl:top-[617px]"
           >
             <Image
               src="/W.png"
@@ -157,7 +157,7 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={40}
-            className="absolute lg:bottom-[-124px] lg:right-[254px] xl:bottom-[-155px] xl:right-[309px] 2xl:bottom-[-183px] 2xl:right-[362px] 3xl:bottom-[-235px] 3xl:right-[483px]"
+            className="absolute lg:bottom-[-125px] lg:right-[257px] xl:bottom-[-156px] xl:right-[322px] 2xl:bottom-[-188px] 2xl:right-[386px] 3xl:bottom-[-235px] 3xl:right-[483px]"
           >
             <Image
               src="/Agrande.png"
@@ -256,19 +256,19 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
             className="absolute lg:left-[29px] lg:top-[146px] xl:left-[37px] xl:top-[183px] 2xl:left-[44px] 2xl:top-[220px] 3xl:left-[56px] 3xl:top-[275px]"
           >
             <Image
-              src="/_0007_facil4.png"
+              src="/facil1.png"
               width={167}
               height={84}
               alt="image3"
-              className="lg:h-[111px] lg:w-[116px] xl:h-[134px] xl:w-[141px] 2xl:h-[161px] 2xl:w-[170px] 3xl:h-[84px] 3xl:w-[167px]"
+              className="lg:h-[44px] lg:w-[89px] xl:h-[56px] xl:w-[111px] 2xl:h-[67px] 2xl:w-[133px] 3xl:h-[84px] 3xl:w-[167px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[56px] lg:top-[-7px] xl:left-[70px] xl:top-[-8px] 2xl:left-[84px] 2xl:top-[-10px] 3xl:left-[105px] 3xl:top-[-12px]"
+            className="absolute lg:left-[56px] lg:top-[-6px] xl:left-[70px] xl:top-[-8px] 2xl:left-[84px] 2xl:top-[-9px] 3xl:left-[105px] 3xl:top-[-12px]"
           >
             <Image
-              src="/_0019_fácil6.png"
+              src="/facil2.png"
               width={160}
               height={115}
               alt="image3"
@@ -277,10 +277,10 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:bottom-[-3px] lg:left-[101px] xl:bottom-[-3px] xl:left-[128px] 2xl:bottom-[-4px] 2xl:left-[155px] 3xl:bottom-[-5px] 3xl:left-[191px]"
+            className="absolute lg:bottom-[-3px] lg:left-[101px] xl:bottom-[-3px] xl:left-[127px] 2xl:bottom-[-4px] 2xl:left-[152px] 3xl:bottom-[-5px] 3xl:left-[191px]"
           >
             <Image
-              src="/_0019_fácil6.png"
+              src="/facil2.png"
               width={160}
               height={115}
               alt="image3"
@@ -289,139 +289,140 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[735px] lg:top-[192px] xl:left-[915px] xl:top-[244px] 2xl:left-[1135px] 2xl:top-[305px] 3xl:left-[1359px] 3xl:top-[361px]"
+            className="absolute lg:left-[724px] lg:top-[192px] xl:left-[906px] xl:top-[240px] 1440:left-[1070px] 1440:top-[280px] 2xl:left-[1087px] 2xl:top-[288px] 3xl:left-[1359px] 3xl:top-[361px]"
           >
             <Image
-              src="/_0019_fácil6.png"
+              src="/facil2.png"
               width={160}
               height={115}
               alt="image3"
               className="lg:h-[62px] lg:w-[85px] xl:h-[77px] xl:w-[107px] 2xl:h-[90px] 2xl:w-[128px] 3xl:h-[115px] 3xl:w-[160px]"
             />
           </WithCursorFollow>
+
           <WithCursorFollow
             zIndex={2}
             className="absolute lg:right-[235px] lg:top-[347px] xl:right-[295px] xl:top-[439px] 2xl:right-[371px] 2xl:top-[521px] 3xl:right-[442px] 3xl:top-[646px]"
           >
             <Image
-              src="/_0007_facil4.png"
+              src="/facil1.png"
               width={167}
               height={84}
               alt="image3"
-              className="lg:h-[111px] lg:w-[116px] xl:h-[134px] xl:w-[141px] 2xl:h-[161px] 2xl:w-[170px] 3xl:h-[84px] 3xl:w-[167px]"
+              className="lg:h-[44px] lg:w-[89px] xl:h-[56px] xl:w-[111px] 2xl:h-[67px] 2xl:w-[133px] 3xl:h-[84px] 3xl:w-[167px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[101px] lg:top-[181px] xl:left-[127px] xl:top-[229px] 2xl:left-[157px] 2xl:top-[286px] 3xl:left-[189px] 3xl:top-[340px]"
+            className="absolute lg:left-[100px] lg:top-[181px] xl:left-[126px] xl:top-[226px] 2xl:left-[151px] 2xl:top-[272px] 3xl:left-[189px] 3xl:top-[340px]"
           >
             <Image
               src="/_0010_divertida1.png"
               width={267}
               height={115}
               alt="image3"
-              className="lg:h-[61px] lg:w-[143px] xl:h-[77px] xl:w-[181px] 2xl:h-[95px] 2xl:w-[220px] 3xl:h-[115px] 3xl:w-[267px]"
+              className="lg:h-[61px] lg:w-[142px] xl:h-[76px] xl:w-[178px] 2xl:h-[92px] 2xl:w-[213px] 3xl:h-[115px] 3xl:w-[267px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:bottom-[11px] lg:right-[111px] xl:bottom-[14px] xl:right-[140px] 2xl:bottom-[17px] 2xl:right-[172px] 3xl:bottom-[21px] 3xl:right-[207px]"
+            className="absolute lg:bottom-[11px] lg:right-[110px] xl:bottom-[14px] xl:right-[138px] 2xl:bottom-[16px] 2xl:right-[165px] 3xl:bottom-[21px] 3xl:right-[207px]"
           >
             <Image
               src="/_0010_divertida1.png"
               width={267}
               height={115}
               alt="image3"
-              className="lg:h-[61px] lg:w-[143px] xl:h-[77px] xl:w-[181px] 2xl:h-[95px] 2xl:w-[220px] 3xl:h-[115px] 3xl:w-[267px]"
+              className="lg:h-[61px] lg:w-[142px] xl:h-[76px] xl:w-[178px] 2xl:h-[92px] 2xl:w-[213px] 3xl:h-[115px] 3xl:w-[267px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:right-[172px] lg:top-[11px] xl:right-[221px] xl:top-[14px] 2xl:right-[270px] 2xl:top-[17px] 3xl:right-[325px] 3xl:top-[-60px]"
+            className="absolute lg:right-[173px] lg:top-[-32px] xl:right-[216px] xl:top-[-40px] 2xl:right-[260px] 2xl:top-[-48px] 3xl:right-[325px] 3xl:top-[-60px]"
           >
             <Image
               src="/_0010_divertida1.png"
               width={267}
               height={115}
               alt="image3"
-              className="lg:h-[61px] lg:w-[143px] xl:h-[77px] xl:w-[181px] 2xl:h-[95px] 2xl:w-[220px] 3xl:h-[115px] 3xl:w-[267px]"
+              className="lg:h-[61px] lg:w-[142px] xl:h-[76px] xl:w-[178px] 2xl:h-[92px] 2xl:w-[213px] 3xl:h-[115px] 3xl:w-[267px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[172px] lg:top-[62px] xl:left-[221px] xl:top-[77px] 2xl:left-[270px] 2xl:top-[96px] 3xl:left-[40px] 3xl:top-[115px]"
+            className="absolute lg:left-[21px] lg:top-[61px] xl:left-[26px] xl:top-[76px] 2xl:left-[32px] 2xl:top-[92px] 3xl:left-[40px] 3xl:top-[115px]"
           >
             <Image
               src="/moderna2.png"
               width={231}
               height={136}
               alt="image3"
-              className="lg:h-[72px] lg:w-[123px] xl:h-[91px] xl:w-[156px] 2xl:h-[113px] 2xl:w-[192px] 3xl:h-[136px] 3xl:w-[231px]"
+              className="lg:h-[72px] lg:w-[123px] xl:h-[90px] xl:w-[154px] 2xl:h-[108px] 2xl:w-[184px] 3xl:h-[136px] 3xl:w-[231px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[686px] lg:top-[267px] xl:left-[869px] xl:top-[340px] 2xl:left-[1022px] 2xl:top-[418px] 3xl:left-[1289px] 3xl:top-[498px]"
+            className="absolute lg:left-[687px] lg:top-[265px] xl:left-[859px] xl:top-[332px] 1440:left-[800px] 1440:top-[300px] 2xl:left-[1031px] 2xl:top-[398px] 3xl:left-[1289px] 3xl:top-[498px]"
           >
             <Image
               src="/moderna2.png"
               width={231}
               height={136}
               alt="image3"
-              className="lg:h-[72px] lg:w-[123px] xl:h-[91px] xl:w-[156px] 2xl:h-[113px] 2xl:w-[192px] 3xl:h-[136px] 3xl:w-[231px]"
+              className="lg:h-[72px] lg:w-[123px] xl:h-[90px] xl:w-[154px] 2xl:h-[108px] 2xl:w-[184px] 3xl:h-[136px] 3xl:w-[231px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[309px] lg:top-[327px] xl:left-[393px] xl:top-[411px] 2xl:left-[488px] 2xl:top-[507px] 3xl:left-[583px] 3xl:top-[611px]"
+            className="absolute lg:left-[310px] lg:top-[325px] xl:left-[388px] xl:top-[407px] 2xl:left-[466px] 2xl:top-[488px] 3xl:left-[583px] 3xl:top-[611px]"
           >
             <Image
               src="/completa.png"
               width={258}
               height={147}
               alt="image3"
-              className="lg:h-[78px] lg:w-[137px] xl:h-[99px] xl:w-[175px] 2xl:h-[122px] 2xl:w-[208px] 3xl:h-[147px] 3xl:w-[258px]"
+              className="lg:h-[78px] lg:w-[137px] xl:h-[98px] xl:w-[172px] 2xl:h-[117px] 2xl:w-[206px] 3xl:h-[147px] 3xl:w-[258px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:right-[-44px] lg:top-[104px] xl:right-[-56px] xl:top-[130px] 2xl:right-[-69px] 2xl:top-[160px] 3xl:right-[-83px] 3xl:top-[195px]"
+            className="absolute lg:right-[-44px] lg:top-[104px] xl:right-[-55px] xl:top-[130px] 2xl:right-[-66px] 2xl:top-[156px] 3xl:right-[-83px] 3xl:top-[195px]"
           >
             <Image
               src="/completa.png"
               width={258}
               height={147}
               alt="image3"
-              className="lg:h-[78px] lg:w-[137px] xl:h-[99px] xl:w-[175px] 2xl:h-[122px] 2xl:w-[208px] 3xl:h-[147px] 3xl:w-[258px]"
+              className="lg:h-[78px] lg:w-[137px] xl:h-[98px] xl:w-[172px] 2xl:h-[117px] 2xl:w-[206px] 3xl:h-[147px] 3xl:w-[258px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[-44px] lg:top-[104px] xl:left-[-56px] xl:top-[130px] 2xl:left-[-69px] 2xl:top-[160px] 3xl:left-[387px] 3xl:top-[237px]"
+            className="absolute lg:left-[206px] lg:top-[126px] xl:left-[258px] xl:top-[158px] 2xl:left-[309px] 2xl:top-[189px] 3xl:left-[387px] 3xl:top-[237px]"
           >
             <Image
               src="/emocionante.png"
               width={371}
               height={115}
               alt="image3"
-              className="lg:h-[78px] lg:w-[137px] xl:h-[99px] xl:w-[175px] 2xl:h-[122px] 2xl:w-[208px] 3xl:h-[115px] 3xl:w-[371px]"
+              className="lg:h-[61px] lg:w-[197px] xl:h-[76px] xl:w-[247px] 2xl:h-[92px] 2xl:w-[296px] 3xl:h-[115px] 3xl:w-[371px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:bottom-[104px] lg:right-[-44px] xl:bottom-[130px] xl:right-[-56px] 2xl:bottom-[160px] 2xl:right-[-69px] 3xl:bottom-[142px] 3xl:right-[4px]"
+            className="absolute lg:bottom-[75px] lg:right-[2px] xl:bottom-[94px] xl:right-[2px] 2xl:bottom-[113px] 2xl:right-[3px] 3xl:bottom-[142px] 3xl:right-[4px]"
           >
             <Image
               src="/emocionante.png"
               width={371}
               height={115}
               alt="image3"
-              className="lg:h-[78px] lg:w-[137px] xl:h-[99px] xl:w-[175px] 2xl:h-[122px] 2xl:w-[208px] 3xl:h-[115px] 3xl:w-[371px]"
+              className="lg:h-[61px] lg:w-[197px] xl:h-[76px] xl:w-[247px] 2xl:h-[92px] 2xl:w-[296px] 3xl:h-[115px] 3xl:w-[371px]"
             />
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:bottom-[-20px] lg:left-[439px] xl:bottom-[-26px] xl:left-[553px] 2xl:bottom-[-31px] 2xl:left-[683px] 3xl:bottom-[-38px] 3xl:left-[820px]"
+            className="absolute lg:bottom-[-20px] lg:left-[437px] xl:bottom-[-26px] xl:left-[546px] 2xl:bottom-[-31px] 2xl:left-[656px] 3xl:bottom-[-38px] 3xl:left-[820px]"
           >
             <Image
               src="/eficiente.png"
@@ -433,7 +434,7 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
           </WithCursorFollow>
           <WithCursorFollow
             zIndex={2}
-            className="absolute lg:left-[409px] lg:top-[-51px] xl:left-[515px] xl:top-[-64px] 2xl:left-[609px] 2xl:top-[-79px] 3xl:left-[765px] 3xl:top-[-96px]"
+            className="absolute lg:left-[408px] lg:top-[-51px] xl:left-[510px] xl:top-[-64px] 2xl:left-[612px] 2xl:top-[-76px] 3xl:left-[765px] 3xl:top-[-96px]"
           >
             <Image
               src="/eficiente.png"
@@ -441,6 +442,18 @@ export function AstronautBannerContent({}: IAstronautBannerProps) {
               height={236}
               alt="image3"
               className="lg:h-[125px] lg:w-[69px] xl:h-[157px] xl:w-[86px] 2xl:h-[188px] 2xl:w-[104px] 3xl:h-[236px] 3xl:w-[130px]"
+            />
+          </WithCursorFollow>
+          <WithCursorFollow
+            zIndex={2}
+            className="absolute lg:left-[472px] lg:top-[255px] xl:left-[590px] xl:top-[319px] 2xl:left-[708px] 2xl:top-[383px] 3xl:left-[885px] 3xl:top-[479px]"
+          >
+            <Image
+              src="/intensa.png"
+              width={240}
+              height={183}
+              alt="image3"
+              className="lg:h-[97px] lg:w-[128px] xl:h-[122px] xl:w-[160px] 2xl:h-[146px] 2xl:w-[192px] 3xl:h-[183px] 3xl:w-[240px]"
             />
           </WithCursorFollow>
         </div>
