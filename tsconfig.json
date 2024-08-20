@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/astronaut-section/framer.jsx"
+    "src/components/astronaut-section/framer.jsx",
+    "src/components/astronaut-section/astronaut-animate.jsx"
   ],
   "exclude": [
     "node_modules"

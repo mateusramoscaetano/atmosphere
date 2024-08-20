@@ -28,26 +28,32 @@ export function Footer({}: IFooterProps) {
     setShowDropdown(!showDropdown);
   };
 
+  const hover = {
+    borderBottom: "3px solid",
+    borderColor: "#f35937",
+    cursor: "pointer",
+  };
+
   return (
     <>
-      <div className="flex w-full flex-col items-center justify-center bg-black lg:h-[410px] lg:gap-[66px] xl:h-[513px] xl:gap-[82px] 2xl:h-[616px] 2xl:gap-[99px] 3xl:h-[770px] 3xl:gap-[124px]">
+      <div className="flex w-full flex-col items-center justify-center lg:h-[410px] lg:gap-[66px] xl:h-[513px] xl:gap-[82px] 2xl:h-[616px] 2xl:gap-[99px] 3xl:h-[770px] 3xl:gap-[124px]">
         <div className="flex flex-col gap-5">
           <Image
-            src="/logo.png"
+            src="/Group.svg"
             width={248}
             height={27}
             alt="atmosphere-logo"
             className=""
           />
           <Image
-            src="/logo-2.png"
+            src="/logo-1.svg"
             width={248}
             height={27}
             alt="atmosphere-logo"
             className=""
           />
           <Image
-            src="/logo-3.png"
+            src="/logo-2.svg"
             width={248}
             height={27}
             alt="atmosphere-logo"
@@ -60,47 +66,42 @@ export function Footer({}: IFooterProps) {
             <motion.li
               className="mb-[5px] text-lg font-medium text-white"
               onClick={handleScrollToTop}
-              whileHover={{
-                borderBottom: "3px solid",
-                borderColor: "#f35937",
-                cursor: "pointer",
-              }}
+              whileHover={hover}
             >
               Início
             </motion.li>
             <motion.li
               className="mb-[5px] text-lg font-medium text-white"
               onClick={() => selectSection("second", 200)}
-              whileHover={{
-                borderBottom: "3px solid",
-                borderColor: "#f35937",
-                cursor: "pointer",
-              }}
+              whileHover={hover}
             >
               Marcas
             </motion.li>
             <motion.li
               className="mb-[5px] text-lg font-medium text-white"
               onClick={() => selectSection("how-to-made", 200)}
+              whileHover={hover}
             >
               Blog
             </motion.li>
             <motion.li
               className="mb-[5px] text-lg font-medium text-white"
               onClick={() => selectSection("gallery", 0)}
+              whileHover={hover}
             >
               Galeria
             </motion.li>
             <motion.li
               className="mb-[5px] text-lg font-medium text-white"
               onClick={() => selectSection("contact", 0)}
+              whileHover={hover}
             >
               Contato
             </motion.li>
           </MotionConfig>
         </ul>
 
-        <div className="flex w-full 3sm:gap-[30px]">
+        <div className="flex w-full items-end justify-center 3sm:gap-[30px]">
           <Image src="/insta.svg" width={25} height={25} alt="logo-insta" />
           <Image src="/youtube.svg" width={27} height={20} alt="logo-insta" />
           <Image src="/linkedin.svg" width={29} height={30} alt="logo-insta" />
