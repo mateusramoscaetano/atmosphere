@@ -3,6 +3,11 @@ import Image from "next/image";
 import { ButtonBanner1 } from "./buttons/button-banner-1";
 import cn from "@/utils/cn";
 import { motion } from "framer-motion";
+import { LogoFormo } from "./images/logo-formo";
+import { LogoYz } from "./images/logo-yz";
+import { LogoRevelo } from "./images/logo-revelo";
+import { LogoLoft } from "./images/logo-loft";
+import { LogoTag } from "./images/logo-tag";
 
 interface IOurBrandsProps {}
 
@@ -17,42 +22,15 @@ export function OurBrands({}: IOurBrandsProps) {
           Nossas Marcas
         </div>
         <div className="flex items-center justify-center gap-[53px] lg:mt-[24px] xl:mt-[30px] 2xl:mt-[36px] 3xl:mt-[46px]">
-          <Image
-            src="/logo_formo.svg"
-            width={170}
-            height={86}
-            alt="logo"
+          <LogoFormo
+            color="white"
             className="lg:h-[45px] lg:w-[90px] xl:h-[58px] xl:w-[115px] 2xl:h-[72px] 2xl:w-[136px] 3xl:h-[86px] 3xl:w-[170px]"
           />
-          <Image
-            src="/logo-yz.svg"
-            width={115}
-            height={86}
-            alt="logo"
-            className="lg:h-[45px] lg:w-[61px] xl:h-[58px] xl:w-[77px] 2xl:h-[72px] 2xl:w-[90px] 3xl:h-[86px] 3xl:w-[115px]"
-          />
+          <LogoYz className="lg:h-[45px] lg:w-[61px] xl:h-[58px] xl:w-[77px] 2xl:h-[72px] 2xl:w-[90px] 3xl:h-[86px] 3xl:w-[115px]" />
 
-          <Image
-            src="/revelo.svg"
-            width={227}
-            height={75}
-            alt="logo"
-            className="lg:h-[39px] lg:w-[121px] xl:h-[52px] xl:w-[153px] 2xl:h-[60px] 2xl:w-[184px] 3xl:h-[75px] 3xl:w-[227px]"
-          />
-          <Image
-            src="/loft.svg"
-            width={122.22}
-            height={68.67}
-            alt="logo"
-            className="lg:h-[36px] lg:w-[65px] xl:h-[46px] xl:w-[82px] 2xl:h-[57px] 2xl:w-[97px] 3xl:h-[68px] 3xl:w-[122px]"
-          />
-          <Image
-            src="/tag.svg"
-            width={137}
-            height={62}
-            alt="logo"
-            className="lg:h-[33px] lg:w-[73px] xl:h-[41px] xl:w-[93px] 2xl:h-[50px] 2xl:w-[108px] 3xl:h-[62px] 3xl:w-[137px]"
-          />
+          <LogoRevelo className="lg:h-[39px] lg:w-[121px] xl:h-[52px] xl:w-[153px] 2xl:h-[60px] 2xl:w-[184px] 3xl:h-[75px] 3xl:w-[227px]" />
+          <LogoLoft className="lg:h-[36px] lg:w-[65px] xl:h-[46px] xl:w-[82px] 2xl:h-[57px] 2xl:w-[97px] 3xl:h-[68px] 3xl:w-[122px]" />
+          <LogoTag className="lg:h-[33px] lg:w-[73px] xl:h-[41px] xl:w-[93px] 2xl:h-[50px] 2xl:w-[108px] 3xl:h-[62px] 3xl:w-[137px]" />
         </div>
         <div className="flex h-20 w-full items-center justify-center">
           <motion.button

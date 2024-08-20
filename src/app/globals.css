@@ -15,16 +15,30 @@
     text-wrap: balance;
   }
 }
+html{
+  font-variant-ligatures: none;
+}
+
+svg:hover path {
+  fill: #ffd413;
+  transition: fill 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 
 @layer superlinefont {
   @font-face {
     font-family: 'Superline';
     font-style: normal;
     font-weight: 400;
+    font-variant-ligatures: none;
     font-display: swap;
     src: url(/src/fonts/Superline-Line.ttf) format('truetype');
   }
 }
+
+
+
 @layer neue {
   @font-face {
     font-family: 'Neue';
@@ -32,6 +46,17 @@
     font-weight: 400;
     font-display: swap;
     src: url(/src/fonts/NeueMontreal-Regular.otf) format('opentype');
+  }
+}
+
+.superline-text {
+  @font-face {
+    font-family: 'Superline';
+    font-style: normal;
+    font-weight: 400;
+    font-variant-ligatures: none;
+    font-display: swap;
+    src: url(/src/fonts/Superline-Line.ttf) format('truetype');
   }
 }
 

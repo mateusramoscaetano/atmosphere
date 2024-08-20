@@ -1,7 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { easeInOut, useMotionValueEvent, useScroll } from "framer-motion";
+import {
+  easeInOut,
+  MotionConfig,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { scrollToSection } from "@/utils/ScrollToSection";
@@ -51,49 +56,51 @@ export function Footer({}: IFooterProps) {
         </div>
 
         <ul className="flex h-[40px] w-full items-center justify-center lg:gap-[64px] xl:gap-[80px] 2xl:gap-[86px] 3xl:gap-[120px]">
-          <motion.li
-            transition={{ duration: 0.5 }}
-            className="mb-[5px] text-lg font-medium text-white"
-            onClick={handleScrollToTop}
-            whileHover={{
-              borderBottom: "3px solid",
-              borderColor: "#f35937",
-              cursor: "pointer",
-            }}
-          >
-            Início
-          </motion.li>
-          <motion.li
-            transition={{ duration: 0.5, ease: easeInOut }}
-            className="mb-[5px] text-lg font-medium text-white"
-            onClick={() => selectSection("second", 200)}
-          >
-            Marcas
-          </motion.li>
-          <motion.li
-            transition={{ duration: 0.5 }}
-            className="mb-[5px] text-lg font-medium text-white"
-            onClick={() => selectSection("how-to-made", 200)}
-          >
-            Blog
-          </motion.li>
-          <motion.li
-            transition={{ duration: 0.5 }}
-            className="mb-[5px] text-lg font-medium text-white"
-            onClick={() => selectSection("gallery", 0)}
-          >
-            Galeria
-          </motion.li>
-          <motion.li
-            transition={{ duration: 0.5 }}
-            className="mb-[5px] text-lg font-medium text-white"
-            onClick={() => selectSection("contact", 0)}
-          >
-            Contato
-          </motion.li>
+          <MotionConfig transition={{ duration: 0.5, ease: easeInOut }}>
+            <motion.li
+              className="mb-[5px] text-lg font-medium text-white"
+              onClick={handleScrollToTop}
+              whileHover={{
+                borderBottom: "3px solid",
+                borderColor: "#f35937",
+                cursor: "pointer",
+              }}
+            >
+              Início
+            </motion.li>
+            <motion.li
+              className="mb-[5px] text-lg font-medium text-white"
+              onClick={() => selectSection("second", 200)}
+              whileHover={{
+                borderBottom: "3px solid",
+                borderColor: "#f35937",
+                cursor: "pointer",
+              }}
+            >
+              Marcas
+            </motion.li>
+            <motion.li
+              className="mb-[5px] text-lg font-medium text-white"
+              onClick={() => selectSection("how-to-made", 200)}
+            >
+              Blog
+            </motion.li>
+            <motion.li
+              className="mb-[5px] text-lg font-medium text-white"
+              onClick={() => selectSection("gallery", 0)}
+            >
+              Galeria
+            </motion.li>
+            <motion.li
+              className="mb-[5px] text-lg font-medium text-white"
+              onClick={() => selectSection("contact", 0)}
+            >
+              Contato
+            </motion.li>
+          </MotionConfig>
         </ul>
 
-        <div className="flex w-full items-end justify-center 3sm:gap-[30px]">
+        <div className="flex w-full 3sm:gap-[30px]">
           <Image src="/insta.svg" width={25} height={25} alt="logo-insta" />
           <Image src="/youtube.svg" width={27} height={20} alt="logo-insta" />
           <Image src="/linkedin.svg" width={29} height={30} alt="logo-insta" />

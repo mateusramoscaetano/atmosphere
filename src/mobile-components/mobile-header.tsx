@@ -57,7 +57,7 @@ export function MobileHeader({}: IMobileHeaderProps) {
         }}
         className="fixed left-0 top-0 z-40 mt-[40px] flex h-full w-full flex-col items-center justify-center bg-black"
       >
-        <ul className="mb-[84px] space-y-[60px] text-center text-[18px] text-white">
+        <ul className="mb-[84px] space-y-[20px] text-center text-[18px] text-white">
           <li onClick={() => selectSection("home-mobile", 0)}>Início</li>
           <li onClick={() => selectSection("", 0)}>Sobre Nós</li>
           <li onClick={() => selectSection("our-brands-mobile", 100)}>

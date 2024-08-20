@@ -19,8 +19,10 @@ export function HowToMade({}: IHowToMadeProps) {
           </div>
 
           <div className="font-superline lg:mb-[49px] lg:text-[24px] lg:leading-[24px] xl:mb-[61px] 2xl:mb-[73px] 3xl:mb-[92px] 3xl:text-[45px] 3xl:leading-[44px]">
-            TODA A SUA JORNADA UNIVERSITÁRIA ESTÁ COBERTA <br /> PELA NOSSA
-            ATMOSFERA DE INFORMAÇÕES
+            <p style={{ fontVariantLigatures: "none" }}>
+              TODA A SUA JORNADA UNIVERSITÁRIA ESTÁ COBERTA <br /> PELA NOSSA
+              ATMOSFERA DE INFORMAÇÕES
+            </p>
           </div>
         </div>
 
