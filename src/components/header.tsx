@@ -70,7 +70,7 @@ export function Header({}: IHeaderProps) {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="2xl:[160px] sticky top-0 flex h-[120px] w-full items-start bg-gradient-to-b from-black to-transparent pt-[48px] backdrop-blur-[1px] lg:pl-[106px] xl:pl-[133px] 3xl:pl-[200px]"
+        className="2xl:[160px] top-0 flex h-[120px] w-full items-start bg-gradient-to-b from-black to-transparent pt-[48px] backdrop-blur-[1px] lg:pl-[106px] xl:pl-[133px] 3xl:pl-[200px]"
       >
         <Image
           src="/logo.png"

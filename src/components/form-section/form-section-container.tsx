@@ -13,10 +13,10 @@ export function FormSectionContainer({}: IFormSectionContainerProps) {
         <div className="relative flex min-h-full w-full items-start">
           <Image
             src="/bg-form.png"
-            width={1920}
+            width={2560}
             height={1080}
             alt="sky"
-            className="object-cover"
+            className="bg-hero-pattern bg- bg-repeat-x object-cover"
           />
           <Image
             src="/sat3.png"
@@ -45,7 +45,7 @@ export function FormSectionContainer({}: IFormSectionContainerProps) {
             width={530}
             height={133}
             alt="zep"
-            className="absolute lg:bottom-[44px] lg:right-[50px] lg:h-[142px] lg:w-[284px] xl:bottom-[56px] xl:right-[64px] xl:h-[180px] xl:w-[355px] 2xl:bottom-[67px] 2xl:right-[77px] 2xl:h-[216px] 2xl:w-[434px] 3xl:bottom-[47px] 3xl:right-[61px] 3xl:h-[250px] 3xl:w-[500px]"
+            className="absolute lg:bottom-[44px] lg:right-[50px] lg:h-[142px] lg:w-[284px] xl:bottom-[56px] xl:right-[64px] xl:h-[180px] xl:w-[355px] 2xl:bottom-[67px] 2xl:right-[77px] 2xl:h-[216px] 2xl:w-[434px] 3xl:bottom-[47px] 3xl:right-[61px] 3xl:h-[250px] 3xl:w-[500px] 4xl:bottom-[207px]"
           />
           <ContactForm />
         </div>

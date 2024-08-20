@@ -23,6 +23,7 @@ import { LogoBanner } from "@/mobile-components/logo-banner";
 import { YoutubeSection } from "@/components/carousel/youtube-section";
 import { VideoSection } from "@/components/video-section";
 import { YoutubeSectionMobile } from "@/mobile-components/carousel/youtube-section-mobile";
+import { Brands } from "@/components/brands";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <Gallery />
 
         <SecondSection />
+        <Brands />
 
         <OurBrands />
 
