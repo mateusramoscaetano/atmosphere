@@ -6,7 +6,7 @@ interface IFormSectionMobileProps {}
 export function FormSectionMobile({}: IFormSectionMobileProps) {
   return (
     <>
-      <div id="contact-mobile" className="flex min-h-full w-full">
+      <div id="contact-mobile" className="flex h-full w-full">
         <Image
           src="/form-banner.png"
           width={430}

@@ -9,10 +9,7 @@ export function FormSectionContainer({}: IFormSectionContainerProps) {
   return (
     <>
       <div className="min-h-full w-full overflow-hidden" id="contact">
-        <div className="h-[43px] w-full bg-[#F35937]"></div>
-        <div className="h-[43px] w-full bg-[#0F4AE4]"></div>
-        <div className="h-[43px] w-full bg-[#FDD000]"></div>
-
+        <div className="h-[50px] w-full bg-black"></div>
         <div className="relative flex min-h-full w-full items-start">
           <Image
             src="/bg-form.png"

@@ -20,6 +20,9 @@ import { GalleryContainerMobile } from "@/mobile-components/gallery/gallery-cont
 import { AstronautBannerMobile } from "@/mobile-components/astronaut/astronaut-banner-mobile";
 import { FormSectionMobile } from "@/mobile-components/form-section/form-section-mobile";
 import { LogoBanner } from "@/mobile-components/logo-banner";
+import { YoutubeSection } from "@/components/carousel/youtube-section";
+import { VideoSection } from "@/components/video-section";
+import { YoutubeSectionMobile } from "@/mobile-components/carousel/youtube-section-mobile";
 
 export default function Home() {
   return (
@@ -39,6 +42,12 @@ export default function Home() {
 
         <AstronautBannerContent />
 
+        <div className="h-[43px] w-full bg-[#F35937]"></div>
+        <div className="h-[43px] w-full bg-[#0F4AE4]"></div>
+        <div className="h-[43px] w-full bg-[#FDD000]"></div>
+
+        <VideoSection />
+
         <FormSectionContainer />
 
         <Footer />
@@ -51,6 +60,7 @@ export default function Home() {
         <HowToMadeMobile />
         <GalleryContainerMobile />
         <AstronautBannerMobile />
+        <YoutubeSectionMobile />
         <FormSectionMobile />
         <LogoBanner />
       </main>

@@ -21,7 +21,7 @@ const config: Config = {
         "1440": "1440px",
         "2sm": "480px",
         "2.5sm": "587px",
-        "3sm": "390px",
+        "3sm": "350px",
         "2lg": "940px",
       },
       fontFamily: {

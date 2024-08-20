@@ -55,7 +55,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
                   width={231}
                   height={839}
                   alt="banner-photo"
-                  className="absolute 3sm:left-[-48px] md:left-[300px]"
+                  className="absolute 3sm:left-[-68px] md:left-[300px]"
                 />
                 <Image
                   src="/Satelite1.png"

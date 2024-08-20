@@ -9,6 +9,7 @@ import { z } from "zod";
 import { ContactCardMobile } from "../cards/contact-card-mobile";
 import cn from "@/utils/cn";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface IContactFormMobileProps {}
 
@@ -49,11 +50,11 @@ export function ContactFormMobile({}: IContactFormMobileProps) {
 
   return (
     <>
-      <div className="absolute mt-[9.6%] flex flex-col items-center justify-center px-4 text-white">
-        <div className="mb-4 flex w-full items-start justify-start font-superline text-[30px]">
+      <div className="absolute mt-[9.6%] flex w-full flex-col items-center px-4 text-white">
+        <div className="mb-4 flex w-full items-start font-superline text-[30px] 3sm:justify-start 2sm:justify-center">
           Fale Com a Gente
         </div>
-        <div className="mb-6 flex w-full items-start justify-start text-sm">
+        <div className="mb-6 flex w-full items-start text-sm 3sm:justify-start 2sm:justify-center">
           Prencha o formulário abaixo ou entre em contato <br /> via WhatsApp
         </div>
         <Form {...form}>
@@ -93,7 +94,7 @@ export function ContactFormMobile({}: IContactFormMobileProps) {
               form={form}
               className="mb-[15px]"
               isError={!!form.formState.errors.message}
-              size="large"
+              size="mobile"
             />
             <motion.button
               className={cn(

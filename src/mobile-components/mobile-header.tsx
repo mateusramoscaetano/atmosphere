@@ -24,7 +24,7 @@ export function MobileHeader({}: IMobileHeaderProps) {
     <>
       <motion.div
         className={cn(
-          "fixed top-0 z-50 flex min-h-[115px] w-full items-center justify-between p-6 transition-colors duration-500",
+          "sticky top-0 z-50 flex h-[115px] w-full items-center justify-between px-10 transition-colors duration-500",
           {
             "bg-black": isOpen,
             "bg-gradient-to-b from-black to-transparent": !isOpen,

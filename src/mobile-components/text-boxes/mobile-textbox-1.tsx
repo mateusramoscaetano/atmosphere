@@ -5,7 +5,7 @@ interface IMobileTextBox1Props {}
 export function MobileTextBox1({}: IMobileTextBox1Props) {
   return (
     <>
-      <div className="absolute top-[200px] flex w-1/2 max-w-[227px] flex-col 3sm:right-0 md:right-10">
+      <div className="absolute top-[180px] flex w-1/2 max-w-[227px] flex-col 3sm:right-2 md:right-10">
         <div className="text-whit mb-4 font-superline text-[40px] leading-[44px] text-white">
           SOMOS UM HUB MULTISSOLUÇÕES PARA <br /> AS MULTINECESSIDADES DE <br />{" "}
           QUEM ESTÁ NA FACULDADE
@@ -18,7 +18,7 @@ export function MobileTextBox1({}: IMobileTextBox1Props) {
         </div>
         <ButtonBanner1
           label="Quero Saber Mais"
-          className="ml-4 h-[46px] w-[148px] text-[14px]"
+          className="z-50 ml-4 h-[46px] w-[148px] text-[14px]"
         />
       </div>
     </>

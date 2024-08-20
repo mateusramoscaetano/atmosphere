@@ -14,7 +14,9 @@ import { TextBoxBanner2 } from "../text-box/text-box-banner-2";
 interface ICarouselProps {}
 
 export function Gallery({}: ICarouselProps) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+  });
   const [inView, setInView] = useState<number>(0);
 
   useEffect(() => {

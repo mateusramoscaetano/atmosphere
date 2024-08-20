@@ -34,7 +34,7 @@ export function SecondSectionMobile({}: ISecondSectionMobileProps) {
             width={640}
             height={446}
             alt="tags"
-            className="scale-200 w-full object-cover"
+            className="w-full scale-200 object-cover"
           />
         </div>
       </div>
