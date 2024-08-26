@@ -5,60 +5,37 @@ import { easeInOut, useMotionValueEvent, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { scrollToSection } from "@/utils/ScrollToSection";
-import { Menu } from "lucide-react";
+
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+import cn from "@/utils/cn";
 
-interface IHeaderProps {}
+interface IHeaderProps {
+  isOnBrandsPage: boolean;
+}
 
-export function Header({}: IHeaderProps) {
+export function Header({ isOnBrandsPage }: IHeaderProps) {
   const router = useRouter();
 
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1097);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     if (previous) {
       if (latest > previous && latest > 150) {
         setHidden(true);
-        setShowDropdown(false);
       } else {
         setHidden(false);
       }
     }
   });
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
-
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    if (showDropdown) {
-      setShowDropdown(false);
-    }
   };
 
   const selectSection = (sectionId: string, offset = 0) => {
     scrollToSection(sectionId, offset);
-    setShowDropdown(!showDropdown);
   };
 
   return (
@@ -70,7 +47,7 @@ export function Header({}: IHeaderProps) {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="2xl:[160px] top-0 flex h-[120px] w-full items-start bg-gradient-to-b from-black to-transparent pt-[48px] backdrop-blur-[1px] lg:pl-[106px] xl:pl-[133px] 3xl:pl-[200px]"
+        className="2xl:[160px] fixed top-0 flex h-[120px] w-full items-start bg-gradient-to-b from-black to-transparent pt-[48px] backdrop-blur-[1px] lg:pl-[106px] xl:pl-[133px] 3xl:pl-[200px]"
       >
         <Image
           src="/logo.png"
@@ -101,7 +78,10 @@ export function Header({}: IHeaderProps) {
               borderColor: "#f35937",
               cursor: "pointer",
             }}
-            className="mb-[5px] text-lg font-medium text-white"
+            className={cn(
+              "mb-[5px] text-lg font-medium text-white",
+              isOnBrandsPage ? "border-b-2 border-[#f35937]" : "",
+            )}
             onClick={() => selectSection("second", 200)}
           >
             Marcas

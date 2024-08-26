@@ -29,16 +29,13 @@ export default function Home() {
   return (
     <>
       <main className="hidden min-h-screen flex-col items-center bg-black font-neue lg:flex">
-        <Header />
+        <Header isOnBrandsPage={false} />
 
         <Gallery />
 
         <SecondSection />
-        <Brands />
 
         <OurBrands />
-
-        <HowToMade />
 
         <GallerySection />
 

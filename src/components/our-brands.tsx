@@ -9,9 +9,11 @@ import { LogoRevelo } from "./images/logo-revelo";
 import { LogoLoft } from "./images/logo-loft";
 import { LogoTag } from "./images/logo-tag";
 
+import { useRouter } from "next/navigation";
 interface IOurBrandsProps {}
 
 export function OurBrands({}: IOurBrandsProps) {
+  const router = useRouter();
   return (
     <>
       <div
@@ -41,6 +43,7 @@ export function OurBrands({}: IOurBrandsProps) {
               scale: 1.2,
             }}
             transition={{ duration: 0.3 }}
+            onClick={() => router.push("/marcas")}
           >
             Saiba Mais
           </motion.button>
