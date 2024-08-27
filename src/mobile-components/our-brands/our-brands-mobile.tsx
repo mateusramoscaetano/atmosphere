@@ -1,10 +1,20 @@
 "use client";
 import { ButtonBanner1 } from "@/components/buttons/button-banner-1";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Brands } from "@/components/brands";
+import cn from "@/utils/cn";
 
 interface IOurBrandsMobileProps {}
 
 export function OurBrandsMobile({}: IOurBrandsMobileProps) {
+  const [showBrands, setShowBrands] = useState(false);
+
+  const toggleBrands = () => {
+    setShowBrands(!showBrands);
+  };
   return (
     <>
       <div
@@ -16,7 +26,7 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
         </div>
         <div className="flex flex-col items-center gap-[70px]">
           <Image
-            src="/logo_formo.svg"
+            src="/logo_formo.png"
             width={170}
             height={86}
             alt="logo"
@@ -51,9 +61,38 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
             alt="logo"
             className=""
           />
-          <ButtonBanner1 label="Saiba Mais" />
+          <div className="flex h-20 w-full items-center justify-center">
+            <motion.button
+              className={cn(
+                "bg-[#0F4AE4] px-2 text-white 3sm:mt-[33px] 3sm:h-[32px] 3sm:w-[112px] xl:mt-[42px] xl:h-[40px] xl:w-[141px] 2xl:mt-[50px] 2xl:h-[48px] 2xl:w-[174px] 3xl:mt-[63px] 3xl:h-[60px] 3xl:w-[209px]",
+              )}
+              whileHover={{
+                scale: 1.2,
+              }}
+              transition={{ duration: 0.3 }}
+              onClick={toggleBrands}
+            >
+              {showBrands ? "Recolher" : "Saiba Mais"}
+            </motion.button>
+          </div>
         </div>
       </div>
+      <AnimatePresence>
+        {showBrands && (
+          <motion.div
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="w-full"
+          >
+            <Brands />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

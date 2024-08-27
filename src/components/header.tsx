@@ -31,7 +31,11 @@ export function Header({ isOnBrandsPage }: IHeaderProps) {
   });
 
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (isOnBrandsPage) {
+      router.push("/");
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const selectSection = (sectionId: string, offset = 0) => {
@@ -47,10 +51,15 @@ export function Header({ isOnBrandsPage }: IHeaderProps) {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="2xl:[160px] fixed top-0 flex h-[120px] w-full items-start bg-gradient-to-b from-black to-transparent pt-[48px] backdrop-blur-[1px] lg:pl-[106px] xl:pl-[133px] 3xl:pl-[200px]"
+        className={cn(
+          "2xl:[160px] fixed top-0 flex h-[120px] w-full items-start pt-[48px] backdrop-blur-[1px] lg:pl-[106px] xl:pl-[133px] 3xl:pl-[200px]",
+          isOnBrandsPage
+            ? "bg-black"
+            : "bg-gradient-to-b from-black to-transparent",
+        )}
       >
         <Image
-          src="/logo.png"
+          src="/logo.svg"
           width={178}
           height={20}
           alt="atmosphere-logo"

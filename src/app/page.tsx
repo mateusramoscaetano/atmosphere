@@ -37,6 +37,8 @@ export default function Home() {
 
         <OurBrands />
 
+        <HowToMade />
+
         <GallerySection />
 
         <AstronautBannerContent />

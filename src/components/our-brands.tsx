@@ -1,19 +1,27 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
-import { ButtonBanner1 } from "./buttons/button-banner-1";
+import { motion, AnimatePresence } from "framer-motion";
 import cn from "@/utils/cn";
-import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+
 import { LogoFormo } from "./images/logo-formo";
 import { LogoYz } from "./images/logo-yz";
 import { LogoRevelo } from "./images/logo-revelo";
 import { LogoLoft } from "./images/logo-loft";
 import { LogoTag } from "./images/logo-tag";
+import { Brands } from "./brands";
 
-import { useRouter } from "next/navigation";
 interface IOurBrandsProps {}
 
 export function OurBrands({}: IOurBrandsProps) {
+  const [showBrands, setShowBrands] = useState(false);
   const router = useRouter();
+
+  const toggleBrands = () => {
+    setShowBrands(!showBrands);
+  };
+
   return (
     <>
       <div
@@ -43,9 +51,9 @@ export function OurBrands({}: IOurBrandsProps) {
               scale: 1.2,
             }}
             transition={{ duration: 0.3 }}
-            onClick={() => router.push("/marcas")}
+            onClick={toggleBrands}
           >
-            Saiba Mais
+            {showBrands ? "Recolher" : "Saiba Mais"}
           </motion.button>
         </div>
         <Image
@@ -56,6 +64,23 @@ export function OurBrands({}: IOurBrandsProps) {
           className="absolute left-[-40px] top-20 z-20 lg:h-[387px] lg:w-[235px] xl:h-[484px] xl:w-[294px] 2xl:h-[581px] 2xl:w-[353px] 3xl:h-[727px] 3xl:w-[442px]"
         />
       </div>
+
+      <AnimatePresence>
+        {showBrands && (
+          <motion.div
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="w-full"
+          >
+            <Brands />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

@@ -32,7 +32,7 @@ export function YoutubeSectionMobile({}: IYoutubeSectionMobileProps) {
         <div className="mb-[42px] flex w-[188px] items-center justify-center border-b-[3px] border-[#F35937] font-superline text-[45px] leading-tight text-white">
           Cases Atmosféricos
         </div>
-        <CarouselContent className="w-[400px]">
+        <CarouselContent className="3sm:w-[350px]">
           {youtubeVideos.map((videoUrl, index) => (
             <CarouselItem
               key={index}
@@ -64,8 +64,8 @@ export function YoutubeSectionMobile({}: IYoutubeSectionMobileProps) {
             className="3sm:w-[240px] 4xl:w-[285px]"
           />
         </a>
-        <CarouselPrevious className="absolute z-50 3sm:left-2 3sm:scale-50" />
-        <CarouselNext className="absolute z-50 3sm:right-2 3sm:scale-50" />
+        <CarouselPrevious className="absolute z-50 3sm:left-10 3sm:scale-50" />
+        <CarouselNext className="absolute z-50 3sm:right-10 3sm:scale-50" />
       </Carousel>
     </>
   );
