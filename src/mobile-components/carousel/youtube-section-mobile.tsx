@@ -64,8 +64,8 @@ export function YoutubeSectionMobile({}: IYoutubeSectionMobileProps) {
             className="3sm:w-[240px] 4xl:w-[285px]"
           />
         </a>
-        <CarouselPrevious className="absolute z-50 3sm:left-10 3sm:scale-50" />
-        <CarouselNext className="absolute z-50 3sm:right-10 3sm:scale-50" />
+        <CarouselPrevious className="absolute z-50 3sm:left-2 3sm:scale-50" />
+        <CarouselNext className="absolute z-50 3sm:right-2 3sm:scale-50" />
       </Carousel>
     </>
   );
