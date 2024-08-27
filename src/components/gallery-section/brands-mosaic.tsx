@@ -61,7 +61,7 @@ export function BrandsMosaic({
               alt="Image 1"
               width={960}
               height={450}
-              className="object-cover 3sm:h-full 3sm:scale-100 md:scale-125 xl:h-[450px] xl:scale-100"
+              className="object-cover 3sm:h-full 3sm:scale-100 md:scale-125 xl:h-[450px] xl:scale-100 3xl:scale-150"
             />
           </div>
         </>
@@ -73,7 +73,7 @@ export function BrandsMosaic({
               alt="Image 1"
               width={960}
               height={450}
-              className="object-cover 3sm:h-full 3sm:scale-100 md:scale-125 xl:h-[450px] xl:scale-100"
+              className="object-cover 3sm:h-full 3sm:scale-100 md:scale-125 xl:h-[450px] xl:scale-100 3xl:scale-150"
             />
           </div>
 

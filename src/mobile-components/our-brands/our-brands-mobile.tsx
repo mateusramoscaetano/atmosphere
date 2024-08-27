@@ -64,7 +64,7 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
           <div className="flex h-20 w-full items-center justify-center">
             <motion.button
               className={cn(
-                "bg-[#0F4AE4] px-2 text-white 3sm:mt-[33px] 3sm:h-[32px] 3sm:w-[112px] xl:mt-[42px] xl:h-[40px] xl:w-[141px] 2xl:mt-[50px] 2xl:h-[48px] 2xl:w-[174px] 3xl:mt-[63px] 3xl:h-[60px] 3xl:w-[209px]",
+                "bg-[#0F4AE4] px-2 text-white 3sm:mt-[33px] 3sm:h-[42px] 3sm:w-[202px] xl:mt-[42px] xl:h-[40px] xl:w-[141px] 2xl:mt-[50px] 2xl:h-[48px] 2xl:w-[174px] 3xl:mt-[63px] 3xl:h-[60px] 3xl:w-[209px]",
               )}
               whileHover={{
                 scale: 1.2,
