@@ -1,4 +1,6 @@
+import { Social } from "@/components/social";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ILogoBannerProps {}
 
@@ -16,10 +18,7 @@ export function LogoBanner({}: ILogoBannerProps) {
           />
         </div>
         <div className="mt-10 flex w-full items-end justify-center 3sm:gap-[30px]">
-          <Image src="/insta.svg" width={25} height={25} alt="logo-insta" />
-          <Image src="/youtube.svg" width={27} height={20} alt="logo-insta" />
-          <Image src="/linkedin.svg" width={29} height={30} alt="logo-insta" />
-          <Image src="/mail5.svg" width={30} height={21} alt="logo-insta" />
+          <Social />
         </div>
       </div>
     </>

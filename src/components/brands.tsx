@@ -18,8 +18,8 @@ export function Brands({}: IBrandsProps) {
           }
         />
         <BrandsMosaic
-          hrefInsta="/insta.com"
-          hrefSite="/site.com"
+          hrefInsta="https://www.instagram.com/formobrasil.pr/"
+          hrefSite="https://formobrasilpr.com.br/"
           src="/brands-formo.png"
           left={true}
           description={
@@ -42,8 +42,8 @@ export function Brands({}: IBrandsProps) {
           }
         />
         <BrandsMosaic
-          hrefInsta="/insta.com"
-          hrefSite="/site.com"
+          hrefInsta="https://www.instagram.com/yzformaturas/"
+          hrefSite="https://yzformaturas.com.br/"
           src="/yz-brands.png"
           left={false}
           description={
@@ -59,7 +59,7 @@ export function Brands({}: IBrandsProps) {
           }
         />
         <BrandsMosaic
-          hrefInsta="/insta.com"
+          hrefInsta="https://www.instagram.com/rvloprod/"
           hrefSite="/site.com"
           description={
             <>
@@ -75,9 +75,10 @@ export function Brands({}: IBrandsProps) {
           }
           src="/revelo-b.png"
           left={true}
+          siteExist={false}
         />
         <BrandsMosaic
-          hrefInsta="/insta.com"
+          hrefInsta="https://www.instagram.com/loftcomendador/"
           hrefSite="/site.com"
           description={
             <>
@@ -94,10 +95,13 @@ export function Brands({}: IBrandsProps) {
           }
           src="/loft-brands.png"
           left={false}
+          siteExist={false}
         />
         <BrandsMosaic
           hrefInsta="/insta.com"
           hrefSite="/site.com"
+          siteExist={false}
+          instaExist={false}
           description={
             <>
               A TAG é o núcleo tecnológico da nossa Atmosfera! TAG Tech é

@@ -42,7 +42,7 @@ const filterMotion = {
 
 export function Mosaic() {
   return (
-    <div className="grid h-full w-full grid-cols-4 grid-rows-3">
+    <div className="z-20 grid h-full w-full grid-cols-4 grid-rows-3">
       <div className="relative col-span-2 row-span-2">
         <motion.div
           initial="rest"

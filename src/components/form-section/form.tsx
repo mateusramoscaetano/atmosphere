@@ -122,7 +122,7 @@ export function ContactForm({}: IFormProps) {
             src="/whats.png"
             width={43}
             height={42}
-            text="41 9 8448-6841"
+            text="41 9 9850-0132"
             className="absolute lg:w-[22px] xl:w-[28px] 2xl:w-[34px] 3xl:w-[43px]"
           />
         </a>

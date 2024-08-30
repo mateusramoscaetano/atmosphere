@@ -9,6 +9,8 @@ interface IBrandsMosaicProps {
   description?: ReactNode;
   hrefInsta: string;
   hrefSite: string;
+  siteExist?: boolean;
+  instaExist?: boolean;
 }
 
 export function BrandsMosaic({
@@ -17,6 +19,8 @@ export function BrandsMosaic({
   description,
   hrefInsta,
   hrefSite,
+  siteExist = true,
+  instaExist = true,
 }: IBrandsMosaicProps) {
   return (
     <div
@@ -34,24 +38,28 @@ export function BrandsMosaic({
               {description}
             </div>
             <div className="flex w-full justify-end">
-              <Link href={hrefInsta}>
-                <Image
-                  src="/site-brands.svg"
-                  alt="Image 1"
-                  width={62}
-                  height={62}
-                  className="object-cover"
-                />
-              </Link>
-              <Link href={hrefSite}>
-                <Image
-                  src="/instagram-brands.svg"
-                  alt="Image 1"
-                  width={62}
-                  height={62}
-                  className="object-cover"
-                />
-              </Link>
+              {instaExist && (
+                <Link href={hrefSite}>
+                  <Image
+                    src="/site-brands.svg"
+                    alt="Image 1"
+                    width={62}
+                    height={62}
+                    className="object-cover"
+                  />
+                </Link>
+              )}
+              {siteExist && (
+                <Link href={hrefInsta}>
+                  <Image
+                    src="/instagram-brands.svg"
+                    alt="Image 1"
+                    width={62}
+                    height={62}
+                    className="object-cover"
+                  />
+                </Link>
+              )}
             </div>
           </div>
 
@@ -82,24 +90,28 @@ export function BrandsMosaic({
               {description}
             </div>
             <div className="flex w-full justify-start">
-              <Link href={hrefInsta}>
-                <Image
-                  src="/site-brands.svg"
-                  alt="Image 1"
-                  width={62}
-                  height={62}
-                  className="object-cover"
-                />
-              </Link>
-              <Link href={hrefSite}>
-                <Image
-                  src="/instagram-brands.svg"
-                  alt="Image 1"
-                  width={62}
-                  height={62}
-                  className="object-cover"
-                />
-              </Link>
+              {instaExist && (
+                <Link href={hrefSite}>
+                  <Image
+                    src="/site-brands.svg"
+                    alt="Image 1"
+                    width={62}
+                    height={62}
+                    className="object-cover"
+                  />
+                </Link>
+              )}
+              {siteExist && (
+                <Link href={hrefInsta}>
+                  <Image
+                    src="/instagram-brands.svg"
+                    alt="Image 1"
+                    width={62}
+                    height={62}
+                    className="object-cover"
+                  />
+                </Link>
+              )}
             </div>
           </div>
         </>

@@ -37,8 +37,6 @@ export default function Home() {
 
         <OurBrands />
 
-        <HowToMade />
-
         <GallerySection />
 
         <AstronautBannerContent />
@@ -58,7 +56,7 @@ export default function Home() {
         <MobileGallery />
         <SecondSectionMobile />
         <OurBrandsMobile />
-        <HowToMadeMobile />
+
         <GalleryContainerMobile />
         <AstronautBannerMobile />
         <YoutubeSectionMobile />
