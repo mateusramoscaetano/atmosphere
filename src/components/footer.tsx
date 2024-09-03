@@ -106,6 +106,16 @@ export function Footer({}: IFooterProps) {
         <div className="flex w-full items-end justify-center 3sm:gap-[30px]">
           <Social />
         </div>
+        <div className="flex w-full items-end justify-center 3sm:gap-[30px]">
+          <Link href="https://nestlab.com.br" target="_blank">
+            <Image
+              src="/made-by-nestlab.png"
+              width={135}
+              height={17}
+              alt="logo-nestlab"
+            />
+          </Link>
+        </div>
       </div>
     </>
   );
