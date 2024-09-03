@@ -75,7 +75,8 @@ export function Brands({}: IBrandsProps) {
           }
           src="/revelo-b.png"
           left={true}
-          siteExist={false}
+          siteExist
+          instaExist={false}
         />
         <BrandsMosaic
           hrefInsta="https://www.instagram.com/loftcomendador/"
@@ -95,7 +96,7 @@ export function Brands({}: IBrandsProps) {
           }
           src="/loft-brands.png"
           left={false}
-          siteExist={false}
+          instaExist={false}
         />
         <BrandsMosaic
           hrefInsta="/insta.com"
