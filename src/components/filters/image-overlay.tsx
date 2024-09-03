@@ -2,11 +2,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ReactNode } from "react";
 import { ExploreButton } from "../buttons/explore-button";
+import { IncommingButton } from "../buttons/incomming-button";
 
 interface ImageOverlayProps {
   imageUrl: string;
   text: ReactNode;
   text2: ReactNode;
+  explore: boolean;
+  onClick: () => void;
 }
 
 const textMotion = {
@@ -51,7 +54,13 @@ const buttonMotion = {
   },
 };
 
-export function ImageOverlay({ imageUrl, text, text2 }: ImageOverlayProps) {
+export function ImageOverlay({
+  imageUrl,
+  text,
+  text2,
+  explore,
+  onClick,
+}: ImageOverlayProps) {
   return (
     <motion.div
       className="group relative w-1/3 overflow-hidden lg:h-[237px] xl:h-[297px] 2xl:h-[356px] 1650:h-[383px] 3xl:h-[446px]"
@@ -86,7 +95,8 @@ export function ImageOverlay({ imageUrl, text, text2 }: ImageOverlayProps) {
           className="flex items-end justify-start"
           variants={buttonMotion}
         >
-          <ExploreButton color="yellow" />
+          {explore && <ExploreButton onClick={onClick} color="yellow" />}
+          {!explore && <IncommingButton />}
         </motion.div>
       </motion.div>
     </motion.div>

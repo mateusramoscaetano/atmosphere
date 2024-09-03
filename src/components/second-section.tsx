@@ -1,12 +1,18 @@
 "use client";
 import { easeInOut, motion } from "framer-motion";
 import { ImageOverlay } from "./filters/image-overlay";
+import { scrollToSection } from "@/utils/ScrollToSection";
 
 export function SecondSection() {
+  const selectSection = (sectionId: string, offset = 0) => {
+    scrollToSection(sectionId, offset);
+  };
   return (
     <div className="relative w-full overflow-hidden lg:h-[237px] xl:h-[297px] 2xl:h-[356px] 1650:h-[383px] 3xl:h-[446px]">
       <div className="relative z-10 flex min-h-full w-full">
         <ImageOverlay
+          onClick={() => selectSection("gallery", 0)}
+          explore={true}
           imageUrl="/feia1.png"
           text={
             <span>
@@ -17,6 +23,8 @@ export function SecondSection() {
           text2="blog atmosférico"
         />
         <ImageOverlay
+          onClick={() => {}}
+          explore={false}
           imageUrl="/feia2.png"
           text={
             <span>

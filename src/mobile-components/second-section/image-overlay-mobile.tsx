@@ -1,5 +1,6 @@
 "use client";
 import { ExploreButton } from "@/components/buttons/explore-button";
+import { IncommingButton } from "@/components/buttons/incomming-button";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { ReactNode, useRef } from "react";
@@ -8,6 +9,8 @@ interface ImageOverlayProps {
   imageUrl: string;
   text: ReactNode;
   text2: ReactNode;
+  explore: boolean;
+  onClick: () => void;
 }
 
 const textMotion = {
@@ -56,6 +59,8 @@ export function ImageOverlayMobile({
   imageUrl,
   text,
   text2,
+  explore,
+  onClick,
 }: ImageOverlayProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -91,7 +96,8 @@ export function ImageOverlayMobile({
           className="flex items-end justify-start"
           variants={buttonMotion}
         >
-          <ExploreButton color="yellow" />
+          {explore && <ExploreButton onClick={onClick} color="yellow" />}
+          {!explore && <IncommingButton />}
         </motion.div>
       </motion.div>
     </motion.div>

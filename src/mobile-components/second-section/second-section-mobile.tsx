@@ -1,15 +1,21 @@
 "use client";
+import { scrollToSection } from "@/utils/ScrollToSection";
 import { ImageOverlayMobile } from "./image-overlay-mobile";
 import { motion } from "framer-motion";
 
 interface ISecondSectionMobileProps {}
 
 export function SecondSectionMobile({}: ISecondSectionMobileProps) {
+  const selectSection = (sectionId: string, offset = 0) => {
+    scrollToSection(sectionId, offset);
+  };
   return (
     <>
       <div className="flex w-full overflow-hidden bg-black 3sm:flex-col">
         <div className="relative z-10 flex overflow-hidden bg-black 3sm:flex-col">
           <ImageOverlayMobile
+            onClick={() => selectSection("gallery-mobile", 0)}
+            explore
             imageUrl="/feia2.png"
             text={
               <span>
@@ -20,6 +26,8 @@ export function SecondSectionMobile({}: ISecondSectionMobileProps) {
             text2="GALERIA DE FOTOS"
           />
           <ImageOverlayMobile
+            onClick={() => {}}
+            explore={false}
             imageUrl="/feia1.png"
             text={
               <span>
@@ -30,7 +38,7 @@ export function SecondSectionMobile({}: ISecondSectionMobileProps) {
             text2="blog atmosférico"
           />
           <motion.img
-            src="/tags2.png"
+            src="/tags4.png"
             width={640}
             height={446}
             alt="tags"

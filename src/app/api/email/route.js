@@ -14,7 +14,7 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
-    to: process.env.NODEMAILER_EMAIL_TO,
+    to: process.env.NODEMAILER_EMAIL,
     subject: `Message from (${email})`,
     text: message,
   };

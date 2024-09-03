@@ -112,16 +112,16 @@ export function ContactFormMobile({}: IContactFormMobileProps) {
         </Form>
 
         <div className="flex items-center justify-center gap-5">
-          <a href="https://wa.me/+5541984486841">
+          <a href="https://wa.me/+5541998500132" target="_blank">
             <ContactCardMobile
               src="/whats.svg"
               width={18}
               height={18}
-              text="41 9 8448-6841"
+              text="41 9 9850-0132"
               className="w-full flex-col"
             />
           </a>
-          <a href="mailto:contato@grupoatmosfera.com.br">
+          <a href="mailto:contato@grupoatmosfera.com.br" target="_blank">
             <ContactCardMobile
               src="/mail9.svg"
               width={19}

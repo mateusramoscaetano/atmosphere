@@ -117,7 +117,7 @@ export function ContactForm({}: IFormProps) {
       </Form>
 
       <div className="flex">
-        <a href="https://wa.me/+5541984486841">
+        <a href="https://wa.me/+5541998500132" target="_blank">
           <ContactCard
             src="/whats.png"
             width={43}
@@ -126,7 +126,7 @@ export function ContactForm({}: IFormProps) {
             className="absolute lg:w-[22px] xl:w-[28px] 2xl:w-[34px] 3xl:w-[43px]"
           />
         </a>
-        <a href="mailto:contato@grupoatmosfera.com.br">
+        <a href="mailto:contato@grupoatmosfera.com.br" target="_blank">
           <ContactCard
             src="/mail.png"
             width={44}

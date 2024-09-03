@@ -39,7 +39,7 @@ export function BrandsMosaic({
             </div>
             <div className="flex w-full justify-end">
               {instaExist && (
-                <Link href={hrefSite}>
+                <Link href={hrefSite} target="_blank">
                   <Image
                     src="/site-brands.svg"
                     alt="Image 1"
@@ -50,7 +50,7 @@ export function BrandsMosaic({
                 </Link>
               )}
               {siteExist && (
-                <Link href={hrefInsta}>
+                <Link href={hrefInsta} target="_blank">
                   <Image
                     src="/instagram-brands.svg"
                     alt="Image 1"
