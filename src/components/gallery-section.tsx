@@ -15,7 +15,7 @@ export function GallerySection({}: IGallerySectionProps) {
           </div>
         }
       />
-      <Mosaic />
+      <Mosaic isMobile={false} />
     </>
   );
 }

@@ -40,7 +40,11 @@ const filterMotion = {
   },
 };
 
-export function Mosaic() {
+interface props {
+  isMobile: boolean;
+}
+
+export function Mosaic({ isMobile }: props) {
   return (
     <div className="z-20 grid h-full w-full grid-cols-4 grid-rows-3">
       <div className="relative col-span-2 row-span-2">
@@ -56,10 +60,12 @@ export function Mosaic() {
             className="h-full w-full object-cover"
             variants={imageMotion}
           />
-          <motion.div
-            variants={filterMotion}
-            className="absolute inset-0 bg-[#0F4AE4]/60"
-          />
+          {!isMobile && (
+            <motion.div
+              variants={filterMotion}
+              className="absolute inset-0 bg-[#0F4AE4]/60"
+            />
+          )}
         </motion.div>
       </div>
       <div className="relative col-start-1 row-start-3">
@@ -75,10 +81,12 @@ export function Mosaic() {
             className="h-full w-full object-cover"
             variants={imageMotion}
           />
-          <motion.div
-            variants={filterMotion}
-            className="absolute inset-0 bg-[#F35937]/60"
-          />
+          {!isMobile && (
+            <motion.div
+              variants={filterMotion}
+              className="absolute inset-0 bg-[#F35937]/60"
+            />
+          )}
         </motion.div>
       </div>
       <div className="relative col-start-2 row-start-3">
@@ -94,10 +102,12 @@ export function Mosaic() {
             className="h-full w-full object-cover"
             variants={imageMotion}
           />
-          <motion.div
-            variants={filterMotion}
-            className="absolute inset-0 bg-[#FDD000]/60"
-          />
+          {!isMobile && (
+            <motion.div
+              variants={filterMotion}
+              className="absolute inset-0 bg-[#FDD000]/60"
+            />
+          )}
         </motion.div>
       </div>
       <div className="relative col-start-3 row-start-1">
@@ -113,10 +123,12 @@ export function Mosaic() {
             className="h-full w-full object-cover"
             variants={imageMotion}
           />
-          <motion.div
-            variants={filterMotion}
-            className="absolute inset-0 bg-[#FDD000]/60"
-          />
+          {!isMobile && (
+            <motion.div
+              variants={filterMotion}
+              className="absolute inset-0 bg-[#FDD000]/60"
+            />
+          )}
         </motion.div>
       </div>
       <div className="relative col-start-4 row-start-1">
@@ -132,10 +144,12 @@ export function Mosaic() {
             className="h-full w-full object-cover"
             variants={imageMotion}
           />
-          <motion.div
-            variants={filterMotion}
-            className="absolute inset-0 bg-[#0F4AE4]/60"
-          />
+          {!isMobile && (
+            <motion.div
+              variants={filterMotion}
+              className="absolute inset-0 bg-[#0F4AE4]/60"
+            />
+          )}
         </motion.div>
       </div>
       <div className="relative col-span-2 col-start-3 row-span-2 row-start-2">
@@ -151,10 +165,12 @@ export function Mosaic() {
             className="h-full w-full object-cover"
             variants={imageMotion}
           />
-          <motion.div
-            variants={filterMotion}
-            className="absolute inset-0 bg-[#F35937]/60"
-          />
+          {!isMobile && (
+            <motion.div
+              variants={filterMotion}
+              className="absolute inset-0 bg-[#F35937]/60"
+            />
+          )}
         </motion.div>
       </div>
     </div>

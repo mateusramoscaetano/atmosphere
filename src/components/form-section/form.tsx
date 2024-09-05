@@ -7,6 +7,8 @@ import { ContactCard } from "../cards/contact-card";
 import formatPhone from "@/utils/formatPhone";
 import cn from "@/utils/cn";
 import { motion } from "framer-motion";
+import { ReactNode, useState } from "react";
+import { Spinner } from "../ui/spinner";
 
 export interface ContactSchema {
   name: string;
@@ -18,6 +20,7 @@ export interface ContactSchema {
 interface IFormProps {}
 
 export function ContactForm({}: IFormProps) {
+  const [message, setMessage] = useState<ReactNode>("Enviar");
   const createContact = z.object({
     name: z.string({ required_error: "Campo obrigatório" }),
     email: z.string({ required_error: "Campo obrigatório" }),
@@ -36,15 +39,23 @@ export function ContactForm({}: IFormProps) {
   });
 
   const onSubmit = async (values: z.infer<typeof createContact>) => {
-    const response = await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({
-        email: values.email,
-        message: `Email:${values.message}`,
-        Nome: values.name,
-        Telefone: values.phone,
-      }),
-    });
+    try {
+      setMessage(<Spinner />);
+
+      const response = await fetch("/api/email", {
+        method: "POST",
+        body: JSON.stringify({
+          email: values.email,
+          message: `Email:${values.message}`,
+          Nome: values.name,
+          Telefone: values.phone,
+        }),
+      });
+
+      setMessage("Enviado");
+    } catch (error) {
+      setMessage("Erro");
+    }
   };
 
   function handlePhoneInput(event: React.ChangeEvent<HTMLInputElement>) {
@@ -99,19 +110,31 @@ export function ContactForm({}: IFormProps) {
             isError={!!form.formState.errors.message}
             size="large"
           />
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-end gap-2">
             <motion.button
               className={cn(
                 "right-0 h-[40px] w-[120px] bg-[#0F4AE4] px-2 text-white",
+                { "cursor-not-allowed": message === "Enviado" },
               )}
-              whileHover={{
-                scale: 1.2,
-              }}
+              whileHover={message !== "Enviado" ? { scale: 1.1 } : {}}
               transition={{ duration: 0.3 }}
               type="submit"
+              disabled={message === "Enviado"}
             >
-              Enviar
+              {message}
             </motion.button>
+            {message === "Enviado" && (
+              <button
+                type="button"
+                onClick={() => {
+                  form.reset();
+                  setMessage("Enviar");
+                }}
+                className="text-sm"
+              >
+                enviar novamente
+              </button>
+            )}
           </div>
         </form>
       </Form>

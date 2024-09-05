@@ -7,7 +7,7 @@ export function GalleryContainerMobile({}: IGalleryContainerMobileProps) {
   return (
     <>
       <GalleryHeaderMobile />
-      <Mosaic />
+      <Mosaic isMobile />
     </>
   );
 }
