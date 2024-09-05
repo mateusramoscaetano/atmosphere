@@ -114,7 +114,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
             whileHover={{ scale: 1.5 }}
             transition={{ duration: 0.5 }}
             onClick={scrollPrev}
-            className="embla__prev absolute bottom-[100px] left-[25px] text-black"
+            className="embla__prev absolute bottom-24 left-[25px] text-black"
           >
             <motion.img src="/left-icon.png" width={60} height={96} />
           </motion.button>
@@ -122,7 +122,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
             whileHover={{ scale: 1.5 }}
             transition={{ duration: 0.5 }}
             onClick={scrollNext}
-            className="embla__next absolute bottom-[100px] right-[25px] text-black"
+            className="embla__next absolute bottom-24 right-[25px] text-black"
           >
             <motion.img src="/right-icon.png" width={60} height={96} />
           </motion.button>

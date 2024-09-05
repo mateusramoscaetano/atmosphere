@@ -8,13 +8,15 @@ export function AstronautBannerMobile({}: IAstronautBannerMobileProps) {
   return (
     <>
       <div className="relative flex min-h-full w-full items-center justify-center bg-black">
-        <Image
-          src="/banner-full.png"
-          width={792}
-          height={355}
-          alt="astronaut banner"
-          className="w-full scale-150 object-cover"
-        />
+        <div className="overflow-hidden">
+          <Image
+            src="/banner-full.png"
+            width={792}
+            height={355}
+            alt="astronaut banner"
+            className="w-full scale-150 object-cover"
+          />
+        </div>
         <motion.img
           src="/astro.png"
           width={196}
