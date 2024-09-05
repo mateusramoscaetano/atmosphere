@@ -32,7 +32,7 @@ export function SecondSection() {
               nosso grupo! Dá uma olhada no que a gente sabe fazer!
             </span>
           }
-          text2="GALERIA DE FOTOS"
+          text2="cases atmosféricos"
         />
 
         <motion.img
