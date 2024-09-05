@@ -24,6 +24,7 @@ export function YoutubeSectionMobile({}: IYoutubeSectionMobileProps) {
   return (
     <>
       <Carousel
+        id="cases"
         opts={{
           align: "start",
         }}

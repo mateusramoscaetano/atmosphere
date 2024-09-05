@@ -7,7 +7,7 @@ interface IAstronautBannerMobileProps {}
 export function AstronautBannerMobile({}: IAstronautBannerMobileProps) {
   return (
     <>
-      <div className="relative flex min-h-full w-full items-center justify-center overflow-hidden bg-black">
+      <div className="relative flex min-h-full w-full items-center justify-center bg-black">
         <Image
           src="/banner-full.png"
           width={792}
@@ -20,7 +20,7 @@ export function AstronautBannerMobile({}: IAstronautBannerMobileProps) {
           width={196}
           height={242}
           alt="astronaut banner"
-          className="absolute z-20"
+          className="pointer-events-none absolute z-[200]" // z-index elevado para garantir que fique na frente
           animate={{
             y: [0, -15, 0],
             x: [0, 5, 0],

@@ -14,7 +14,7 @@ export function SecondSectionMobile({}: ISecondSectionMobileProps) {
       <div className="flex w-full overflow-hidden bg-black 3sm:flex-col">
         <div className="relative z-10 flex overflow-hidden bg-black 3sm:flex-col">
           <ImageOverlayMobile
-            onClick={() => selectSection("gallery-mobile", 0)}
+            onClick={() => selectSection("cases", 200)}
             explore
             imageUrl="/feia2.png"
             text={
@@ -23,7 +23,7 @@ export function SecondSectionMobile({}: ISecondSectionMobileProps) {
                 nosso grupo! Dá uma olhada no que a gente sabe fazer!
               </span>
             }
-            text2="GALERIA DE FOTOS"
+            text2="cases atmosféricos"
           />
           <ImageOverlayMobile
             onClick={() => {}}

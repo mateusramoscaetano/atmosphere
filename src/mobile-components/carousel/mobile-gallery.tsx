@@ -48,7 +48,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
                   width={459}
                   height={645}
                   alt="banner-photo"
-                  className="absolute top-[166px] z-10 3sm:left-[-220px] 2sm:left-[-200px] sm:left-[-50px] md:left-[75px]"
+                  className="absolute bottom-0 z-10 3sm:left-[-220px] 2sm:left-[-200px] sm:left-[-50px] md:left-[75px]"
                 />
                 <Image
                   src="/Sky1.png"
