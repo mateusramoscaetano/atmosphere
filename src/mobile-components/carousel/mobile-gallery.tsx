@@ -40,7 +40,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
           className="embla__viewport flex w-full flex-col items-center justify-center"
           ref={emblaRef}
         >
-          <div className="embla__container h-[740px] w-full">
+          <div className="embla__container relative h-[740px] w-full">
             <div className="embla__slide flex items-center justify-center">
               <div className="embla_slide relative flex h-full w-full justify-center bg-black">
                 <Image
@@ -110,22 +110,24 @@ export function MobileGallery({}: IMobileGalleryProps) {
             </div>
           </div>
 
-          <motion.button
-            whileHover={{ scale: 1.5 }}
-            transition={{ duration: 0.5 }}
-            onClick={scrollPrev}
-            className="embla__prev absolute bottom-24 left-[25px] text-black"
-          >
-            <motion.img src="/left-icon.png" width={60} height={96} />
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.5 }}
-            transition={{ duration: 0.5 }}
-            onClick={scrollNext}
-            className="embla__next absolute bottom-24 right-[25px] text-black"
-          >
-            <motion.img src="/right-icon.png" width={60} height={96} />
-          </motion.button>
+          <div className="absolute bottom-2 flex w-full justify-between px-[15px] sm:bottom-[300px]">
+            <motion.button
+              whileHover={{ scale: 1.5 }}
+              transition={{ duration: 0.5 }}
+              onClick={scrollPrev}
+              className="embla__prev text-black"
+            >
+              <motion.img src="/left-icon.png" width={60} height={96} />
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.5 }}
+              transition={{ duration: 0.5 }}
+              onClick={scrollNext}
+              className="embla__next text-black"
+            >
+              <motion.img src="/right-icon.png" width={60} height={96} />
+            </motion.button>
+          </div>
         </div>
       </div>
     </>
