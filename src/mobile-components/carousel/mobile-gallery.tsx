@@ -62,7 +62,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
                   width={252}
                   height={913}
                   alt="banner-photo"
-                  className="absolute left-[-31px] top-[15px]"
+                  className="absolute left-[-31px] top-[15px] w-[200px]"
                 />
                 <Image
                   src="/ZEP1.png"

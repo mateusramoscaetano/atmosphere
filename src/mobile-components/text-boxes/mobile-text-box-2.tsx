@@ -6,7 +6,7 @@ interface IMobileTextBox2Props {}
 export function MobileTextBox2({}: IMobileTextBox2Props) {
   return (
     <>
-      <div className="absolute top-[220px] flex flex-col 3sm:left-10 2sm:left-12 sm:left-28 md:left-48">
+      <div className="absolute top-[250px] flex flex-col 3sm:left-10 2sm:left-12 sm:left-28 sm:flex md:left-48">
         <div className="mb-4 font-superline text-[40px] leading-[44px] text-white">
           A VOZ DE UMA <br />
           GERAÇÃO E A EXPRESSÃO <br /> DO AGORA
