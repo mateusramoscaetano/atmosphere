@@ -110,24 +110,22 @@ export function MobileGallery({}: IMobileGalleryProps) {
             </div>
           </div>
 
-          <div className="absolute bottom-2 flex w-full justify-between px-[15px] sm:bottom-[300px]">
-            <motion.button
-              whileHover={{ scale: 1.5 }}
-              transition={{ duration: 0.5 }}
-              onClick={scrollPrev}
-              className="embla__prev text-black"
-            >
-              <motion.img src="/left-icon.png" width={60} height={96} />
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.5 }}
-              transition={{ duration: 0.5 }}
-              onClick={scrollNext}
-              className="embla__next text-black"
-            >
-              <motion.img src="/right-icon.png" width={60} height={96} />
-            </motion.button>
-          </div>
+          <motion.button
+            whileHover={{ scale: 1.5 }}
+            transition={{ duration: 0.5 }}
+            onClick={scrollPrev}
+            className="embla__prev absolute bottom-[-100px] left-[15px] text-black sm:bottom-[300px]"
+          >
+            <motion.img src="/left-icon.png" width={60} height={96} />
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.5 }}
+            transition={{ duration: 0.5 }}
+            onClick={scrollNext}
+            className="embla__next absolute bottom-[-100px] right-[15px] text-black sm:bottom-[300px]"
+          >
+            <motion.img src="/right-icon.png" width={60} height={96} />
+          </motion.button>
         </div>
       </div>
     </>
