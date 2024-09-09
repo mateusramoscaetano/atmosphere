@@ -17,7 +17,7 @@ export function MobileTextBox1({}: IMobileTextBox1Props) {
   };
   return (
     <>
-      <div className="absolute hidden w-1/2 max-w-[227px] flex-col 3sm:right-2 sm:top-[0px] sm:flex md:right-10">
+      <div className="absolute hidden w-1/2 max-w-[227px] flex-col 3sm:right-2 sm:top-[0px] md:right-10 lg:flex">
         <div className="text-whit mb-4 font-superline text-[40px] leading-[44px] text-white">
           SOMOS UM HUB MULTISSOLUÇÕES PARA <br /> AS MULTINECESSIDADES DE <br />{" "}
           QUEM ESTÁ NA FACULDADE

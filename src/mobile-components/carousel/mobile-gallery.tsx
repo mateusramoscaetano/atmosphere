@@ -111,12 +111,14 @@ export function MobileGallery({}: IMobileGalleryProps) {
           </div>
 
           {/* Adicionando os Dots */}
-          <div className="embla__dots absolute bottom-[-100px] z-20 flex justify-center gap-2 sm:bottom-[300px]">
+          <div className="embla__dots absolute bottom-[-30px] z-20 flex justify-center gap-2 sm:bottom-[-300px]">
             {scrollSnaps.map((_, index) => (
               <button
                 key={index}
-                className={`embla__dot h-1 w-1 rounded-full bg-[#FDD100] ${
-                  inView === index ? "opacity-100" : "opacity-50"
+                className={`embla__dot h-2 w-2 rounded-full bg-[#FDD100] ${
+                  inView === index
+                    ? "scale-105 opacity-100"
+                    : "bg-white opacity-50"
                 }`}
                 onClick={() => emblaApi && emblaApi.scrollTo(index)}
               />
@@ -127,7 +129,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
             whileHover={{ scale: 1.5 }}
             transition={{ duration: 0.5 }}
             onClick={scrollPrev}
-            className="embla__prev absolute bottom-[-100px] left-[15px] text-black sm:bottom-[300px]"
+            className="embla__prev absolute bottom-[-50px] left-[15px] text-black sm:bottom-[300px]"
           >
             <motion.img src="/left-icon.png" width={60} height={96} />
           </motion.button>
@@ -135,7 +137,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
             whileHover={{ scale: 1.5 }}
             transition={{ duration: 0.5 }}
             onClick={scrollNext}
-            className="embla__next absolute bottom-[-100px] right-[15px] text-black sm:bottom-[300px]"
+            className="embla__next absolute bottom-[-50px] right-[15px] text-black sm:bottom-[300px]"
           >
             <motion.img src="/right-icon.png" width={60} height={96} />
           </motion.button>
