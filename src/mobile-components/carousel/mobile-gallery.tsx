@@ -110,6 +110,19 @@ export function MobileGallery({}: IMobileGalleryProps) {
             </div>
           </div>
 
+          {/* Adicionando os Dots */}
+          <div className="embla__dots absolute bottom-[-100px] z-20 flex justify-center gap-2 sm:bottom-[300px]">
+            {scrollSnaps.map((_, index) => (
+              <button
+                key={index}
+                className={`embla__dot h-1 w-1 rounded-full bg-[#FDD100] ${
+                  inView === index ? "opacity-100" : "opacity-50"
+                }`}
+                onClick={() => emblaApi && emblaApi.scrollTo(index)}
+              />
+            ))}
+          </div>
+
           <motion.button
             whileHover={{ scale: 1.5 }}
             transition={{ duration: 0.5 }}
