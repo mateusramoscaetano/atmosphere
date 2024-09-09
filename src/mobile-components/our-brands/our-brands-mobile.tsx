@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Brands } from "@/components/brands";
 import cn from "@/utils/cn";
+import { useStore } from "@/hooks/use-brands";
 
 interface IOurBrandsMobileProps {}
 
@@ -13,12 +14,14 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
   const [showBrands, setShowBrands] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const { show, toggleShow } = useStore();
+
   const toggleBrands = () => {
-    if (showBrands) {
+    if (show) {
       setIsLoading(true);
-      setShowBrands(false);
+      toggleShow();
     } else {
-      setShowBrands(true);
+      toggleShow();
     }
   };
   return (
@@ -97,7 +100,7 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
                     />
                   </svg>
                 </div>
-              ) : showBrands ? (
+              ) : show ? (
                 "Recolher"
               ) : (
                 "Saiba Mais"
@@ -108,10 +111,10 @@ export function OurBrandsMobile({}: IOurBrandsMobileProps) {
       </div>
       <AnimatePresence
         onExitComplete={() => {
-          setIsLoading(false); // Para parar o loader após a animação terminar
+          setIsLoading(false);
         }}
       >
-        {showBrands && (
+        {show && (
           <motion.div
             initial={{ height: 0 }}
             animate={{ height: "auto" }}

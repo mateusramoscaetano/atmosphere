@@ -3,8 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import cn from "@/utils/cn";
-import { useRouter } from "next/navigation";
-
 import { LogoFormo } from "./images/logo-formo";
 import { LogoYz } from "./images/logo-yz";
 import { LogoRevelo } from "./images/logo-revelo";
@@ -12,18 +10,19 @@ import { LogoLoft } from "./images/logo-loft";
 import { LogoTag } from "./images/logo-tag";
 import { Brands } from "./brands";
 import { Spinner } from "./ui/spinner";
+import { useStore } from "@/hooks/use-brands";
 
 export function OurBrands() {
-  const [showBrands, setShowBrands] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
+
+  const { show, toggleShow } = useStore();
 
   const toggleBrands = () => {
-    if (showBrands) {
+    if (show) {
       setIsLoading(true);
-      setShowBrands(false);
+      toggleShow();
     } else {
-      setShowBrands(true);
+      toggleShow();
     }
   };
 
@@ -58,7 +57,7 @@ export function OurBrands() {
             transition={{ duration: 0.3 }}
             onClick={toggleBrands}
           >
-            {isLoading ? <Spinner /> : showBrands ? "Recolher" : "Saiba Mais"}
+            {isLoading ? <Spinner /> : show ? "Recolher" : "Saiba Mais"}
           </motion.button>
         </div>
         <Image
@@ -72,10 +71,10 @@ export function OurBrands() {
 
       <AnimatePresence
         onExitComplete={() => {
-          setIsLoading(false); // Para parar o loader após a animação terminar
+          setIsLoading(false);
         }}
       >
-        {showBrands && (
+        {show && (
           <motion.div
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
