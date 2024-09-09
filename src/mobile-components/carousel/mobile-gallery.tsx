@@ -111,7 +111,7 @@ export function MobileGallery({}: IMobileGalleryProps) {
           </div>
 
           {/* Adicionando os Dots */}
-          <div className="embla__dots absolute bottom-[-30px] z-20 flex justify-center gap-2 sm:bottom-[-300px]">
+          <div className="embla__dots 1 absolute bottom-[-30px] z-20 flex justify-center gap-2 sm:bottom-[-300px]">
             {scrollSnaps.map((_, index) => (
               <button
                 key={index}
