@@ -65,7 +65,12 @@ export function MobileHeader({}: IMobileHeaderProps) {
           <li onClick={() => selectSection("our-brands-mobile", 100)}>
             Marcas
           </li>
-          <li onClick={() => selectSection("how-to-mobile", 100)}>Blog</li>
+          <li
+            className="hidden"
+            onClick={() => selectSection("how-to-mobile", 100)}
+          >
+            Blog
+          </li>
           <li onClick={() => selectSection("gallery-mobile", 200)}>Galeria</li>
           <li onClick={() => selectSection("contact-mobile", 100)}>Contato</li>
         </ul>

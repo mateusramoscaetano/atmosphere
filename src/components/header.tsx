@@ -63,7 +63,7 @@ export function Header({ isOnBrandsPage }: IHeaderProps) {
           width={178}
           height={20}
           alt="atmosphere-logo"
-          className="cursor-pointer lg:mr-[112px] xl:mr-[140px] 2xl:mr-[168px] 3xl:mr-[211px]"
+          className="112 cursor-pointer lg:mr-[140px] xl:mr-[168px] 2xl:mr-[211px] 3xl:mr-[211px]"
           onClick={handleScrollToTop}
         />
         <ul className="flex lg:gap-[64px] xl:gap-[80px] 2xl:gap-[86px] 3xl:gap-[120px]">
@@ -103,7 +103,7 @@ export function Header({ isOnBrandsPage }: IHeaderProps) {
               borderColor: "#f35937",
               cursor: "pointer",
             }}
-            className="mb-[5px] text-lg font-medium text-white"
+            className="mb-[5px] hidden text-lg font-medium text-white"
             onClick={() => selectSection("how-to-made", 200)}
           >
             Blog
